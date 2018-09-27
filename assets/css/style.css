@@ -21,6 +21,22 @@
   background: #339933;
 }
 
+.bg-greenmenu1 {
+  color: #fff;
+  background: #33CC00;
+}
+.bg-greenmenu2 {
+  color: #fff;
+  background: #33CC33;
+}
+.bg-greenmenu3 {
+  color: #fff;
+  background: rgb(62, 206, 62);
+}
+.bg-greenmenu4 {
+  color: #fff;
+  background:rgb(68, 211, 68);
+}
 @media (min-width: 1199px) {
   .port-item {
     padding: 3em !important;

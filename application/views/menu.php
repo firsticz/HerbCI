@@ -18,20 +18,20 @@
                         </div>
                         <div>
                             <div class="d-flex flex-row text-white align-item-stretch text-center">
-                                <div class="port-item p-4 bg-primary" data-toggle="collapse" data-target="#home">
+                                <div class="port-item p-4 bg-greenmenu1" data-toggle="collapse" data-target="#home">
                                     <i class="fas fa-home fa-2x d-block"></i>
                                     <span class="d-none d-sm-block">Home</span>
                                 </div>
-                                <div class="port-item p-4 bg-primary" data-toggle="collapse" data-target="#herbsearch">
+                                <div class="port-item p-4 bg-greenmenu2" data-toggle="collapse" data-target="#herbsearch">
                                     <i class="fas fa-feather-alt fa-2x d-block"></i>
                                     <span class="d-none d-sm-block">Herb Search</span>
                                 </div>
-                                <div class="port-item p-4 bg-primary" data-toggle="collapse" data-target="#symptomsearch">
-                                    <i class="fas fa-home fa-2x d-block"></i>
+                                <div class="port-item p-4 bg-greenmenu3" data-toggle="collapse" data-target="#symptomsearch">
+                                    <i class="fas fa-feather-alt fa-2x d-block"></i>
                                     <span class="d-none d-sm-block">Symptom Search</span>
                                 </div>
-                                <div class="port-item p-4 bg-primary" data-toggle="collapse" data-target="#home">
-                                    <i class="fas fa-home fa-2x d-block"></i>
+                                <div class="port-item p-4 bg-greenmenu4" data-toggle="collapse" data-target="#home">
+                                    <i class="fas fa-feather-alt fa-2x d-block"></i>
                                     <span class="d-none d-sm-block">Home</span>
                                 </div>
 
@@ -42,5 +42,31 @@
                 </div>
             </div>
         </header>
-    </div>
-</body>
+
+        <!--home-->
+        <div id="home" class="collapse show">
+            <div class="card card-body bg-greenmenu1 text-white py-5">
+                <h2>Welcome To Mhunprai</h2>
+                <p class="lead">test</p>
+            </div>
+
+            <div class="card card-body py5">
+                <h3>Test</h3>
+                <p>Hello</p>
+            </div>
+
+
+        </div>
+        <!--home-->
+
+        <!--herb-->
+        <div id="herbsearch" class="collapse">
+            <div class="card card-body bg-greenmenu2 text-white py-5">
+                <h2>Herb Search</h2>
+                <p class="lead">test</p>
+            </div>
+            <div class="card card-body py-5">
+                
+            </div>
+        </div>
+        <!--herb-->
