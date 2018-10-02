@@ -17,6 +17,12 @@ class Main extends CI_Controller {
         $this->load->view('footer');
 	}
 
+	public function insertsymptom()
+	{
+		$this->load->view('header');
+        $this->load->view('insertsypmtom');
+	}
+
 	public function login()
 	{
 
