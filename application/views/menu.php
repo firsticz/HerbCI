@@ -55,6 +55,7 @@
                 <p>Hello</p>
                 <hr>
 
+                <!-- 
                 <h4>ยาหอมทิพโอสถ</h4>
                 <p>คะแนนความพึงพอใจ</p>
                 <div class="progress mb-3">
@@ -64,7 +65,8 @@
                 <p>คะแนนความพึงพอใจ</p>
                 <div class="progress mb-3">
                 <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
-                </div>
+                </div> -->
+                <div id="vote"></div>
             </div>
 
 
@@ -169,6 +171,7 @@
                         <div class="card-body">
                             <h5 class="card-title">ยาหอมทิพโอสถ </h5>
                             <p class="card-text">
+                            
                             <dl>
                                 <dt>สูตรตำรับ</dt>
                                 <dd>ในผงยา 142 กรัม ประกอบด้วย</dd>
@@ -193,3 +196,5 @@
             </div>
         </div>
         <!--Symptom group-->
+
+        

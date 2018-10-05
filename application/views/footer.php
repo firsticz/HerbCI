@@ -55,4 +55,22 @@
         $('.collapse').collapse('hide');
     });
 </script>
+
+    <script>
+        let vote = $("#vote");
+        $.post("http://localhost:8080/Mhunpris/api/score/findAll", {},
+            function (data, textStatus, jqXHR) {
+                var listOfFormula = data.data;
+                var strVote = "";
+                $.each(listOfFormula, function( index, value ) {
+                    strVote += '<h4>'+value.drugformula+'</h4>'
+                            + '<p>คะแนนความพึงพอใจ</p>'
+                            + '<div class="progress mb-3">'
+                            + '<div class="progress-bar" role="progressbar" style="width: '+value.score+'%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">'+value.score+'%</div>'
+                            + '</div>';                
+                });
+                vote.html(strVote);  
+            }
+        );
+    </script>
 </body>
