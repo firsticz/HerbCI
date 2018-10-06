@@ -27,6 +27,7 @@ class Main extends CI_Controller {
 	{
 		$this->load->view('header2');
 		$this->load->view('login');
+		$this->load->view('script');
 	}
 
 	public function loout()

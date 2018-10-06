@@ -1,4 +1,14 @@
 <body>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 text-center">Be sure to include <a href="https://daneden.github.io/animate.css/" target="_blank" title="animate.css">animate.css</a> for the animations</div>
+  </div>
+</div>
+<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+
+
     <div class="container">
         <header id="main-header">
             <div class="row no-gutters">
@@ -10,6 +20,10 @@
                         <div class="p-5 bg-green text-white">
                             <div class="d-flex flex-row justify-content-between align-items-center">
                                 <h1 class="display-4">Mhunprai</h1>
+                                <a class="btn btn-dark" href="login" role="button" 
+                                target="popup" 
+                                onclick="window.open('login','popup','width=600,height=600'); return false;">
+                                    Login</a>
                             </div>
                         </div>
 
