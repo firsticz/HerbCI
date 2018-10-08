@@ -34,4 +34,14 @@ class Main extends CI_Controller {
 	{
 
 	}
+	public function insertherb()
+	{
+		$this->load->view('header');
+        $this->load->view('insertherb');
+	}
+	public function insertgroup()
+	{
+		$this->load->view('header');
+        $this->load->view('insertgroup');
+	}
 }
