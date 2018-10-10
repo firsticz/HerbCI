@@ -76,18 +76,8 @@
     <div class="container">
       <div class="row">
         <div class="col-md-3">
-          <a href="index.html" class="btn btn-light btn-block">
+          <a href="<?php echo base_url() ?>main/getherb" class="btn btn-light btn-block">
             <i class="fas fa-arrow-left"></i> Back To Dashboard
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="<?php echo base_url()?>main/getherb"  class="btn btn-success btn-block">
-            <i class="fas fa-check"></i> Save Changes
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="index.html" class="btn btn-danger btn-block">
-            <i class="fas fa-trash"></i> Delete Post
           </a>
         </div>
       </div>
@@ -120,7 +110,7 @@
                   <?php
                   $i = 1;
                   foreach($properties as $value) {
-                  echo  '<input type="text" name="properties" id="properties'.$i.'" class="form-control" value="'.$value.'">';
+                  echo  '<input type="text" name="properties" id="properties'.$i.'" class="form-control" value="'.$value.'"><label></label>';
                   $i++;
                   }
                   ?>
@@ -130,12 +120,14 @@
                   <?php
                   $i = 1;
                   foreach($warning as $value) {
-                  echo  '<input type="text" name="warning" id="warning'.$i.'" class="form-control" value="'.$value.'">';
+                  echo  '<input type="text" name="warning" id="warning'.$i.'" class="form-control" value="'.$value.'"><label></label>';
                   $i++;
                   }
                   ?>
                 </div>
-                <input type="submit" value="send">
+                <div class="col-md-3">
+                <input type="submit" class="btn btn-success btn-block" value="Save">
+                </div>
               </form>
             </div>
           </div>
@@ -152,7 +144,7 @@
           <p class="lead text-center">
             Copyright &copy;
             <span id="year"></span>
-            Blogen
+            Mhunprai
           </p>
         </div>
       </div>

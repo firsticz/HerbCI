@@ -21,6 +21,11 @@ class Main extends CI_Controller {
 	{
 		$this->load->view('header');
         $this->load->view('insertsypmtom');
+    }
+    public function insertherb()
+	{
+		$this->load->view('header');
+        $this->load->view('insertherb');
 	}
 
 	public function login()
@@ -82,5 +87,13 @@ class Main extends CI_Controller {
         );
         $this->load->view('editherbs', $data);
     }
+
+    // public function deleteherb($herbid)
+    // {
+    //     $data = array(
+    //         'herbid' => $herbid
+    //     );
+    //     $this->load->view('deleteherb', $data);
+    // }
 
 }

@@ -64,7 +64,7 @@
   </nav>
 
   <!-- HEADER -->
-  <header id="main-header" class="py-2 bg-primary text-white">
+  <header id="main-header" class="py-2 bg-success text-white">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
@@ -76,21 +76,34 @@
   </header>
 
   <!-- SEARCH -->
-  <section id="search" class="py-4 mb-4 bg-light">
+  <section id="search" class="py-4 bg-light">
     <div class="container">
       <div class="row">
         <div class="col-md-6 ml-auto">
           <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search Posts...">
+            <input type="text" class="form-control" placeholder="Search Herb...">
             <div class="input-group-append">
-              <button class="btn btn-primary">Search</button>
+              <button class="btn btn-success">Search</button>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
+  <section id="search" class="py-4 mb-4 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1 ml-auto">
+          <div class="input-group">
+            <div class="input-group">
+              <a href="<?php echo base_url() ?>main/insertherb" class="btn btn-success">Input</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
   <!-- POSTS -->
   <section id="posts">
     <div class="container">
@@ -98,7 +111,7 @@
         <div class="col">
           <div class="card">
             <div class="card-header">
-              <h4>Latest Posts</h4>
+              <h4>Herb</h4>
             </div>
             <table class="table table-striped">
               <thead class="thead-dark">
@@ -148,7 +161,7 @@
           <p class="lead text-center">
             Copyright &copy;
             <span id="year"></span>
-            Blogen
+            Mhunprai
           </p>
         </div>
       </div>
@@ -185,7 +198,7 @@
                             + '<a href="editherb/'+value._id+'/'+value.herbname+'/'+value.properties+'/'+value.warning+'" class="btn btn-info">'
                             + '<i class="far fa-edit"></i> Edit'
                             + '</a> &nbsp;'
-                            + '<a href="details.html" class="btn btn-danger">'
+                            + '<a href="deleteherb/'+value._id+'" class="btn btn-danger">'
                             + '<i class="far fa-trash-alt"></i> Delete'
                             + '</a>'
                             + '</td>'
