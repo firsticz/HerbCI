@@ -1,4 +1,23 @@
 <!------ Include the above in your HEAD tag ---------->
+    <?php
+        $success_msg= $this->session->flashdata('success_msg');
+        $error_msg= $this->session->flashdata('error_msg');
+ 
+        if($success_msg){
+            ?>
+            <div class="alert alert-success">
+                <?php echo $success_msg; ?>
+            </div>
+            <?php
+        }
+        if($error_msg){
+            ?>
+            <div class="alert alert-danger">
+                <?php echo $error_msg; ?>
+            </div>
+            <?php
+        }
+    ?>
 
     <div class="container">    
         <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
@@ -12,7 +31,7 @@
 
                         <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
                             
-                        <form id="loginform" class="form-horizontal" role="form" action="signin">
+                        <form id="loginform" class="form-horizontal" role="form" action="<?php echo base_url('Main/login_user'); ?>">
                                     
                             <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
