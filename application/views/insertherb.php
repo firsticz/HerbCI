@@ -7,11 +7,11 @@
   </div>
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Properties</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Properties input"></textarea>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"  cols="50" placeholder="Properties input"></textarea>
   </div>
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Warning</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Warning input"></textarea>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" cols="50" placeholder="Warning input"></textarea>
   </div>
   
   <button type="button" class="btn btn-primary">Insert</button>
