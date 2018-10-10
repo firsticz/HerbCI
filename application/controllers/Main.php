@@ -98,5 +98,10 @@ class Main extends CI_Controller {
     //     );
     //     $this->load->view('deleteherb', $data);
     // }
+    public function searchscore()
+	{
+        $this->load->view('header');
+        $this->load->view('searchscore');
+    }
 
 }
