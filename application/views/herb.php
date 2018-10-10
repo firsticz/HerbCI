@@ -81,7 +81,7 @@
       <div class="row">
         <div class="col-md-6 ml-auto">
           <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search Herb...">
+            <input type="text" class="form-control" id="myInput" placeholder="Search Herb...">
             <div class="input-group-append">
               <button class="btn btn-success">Search</button>
             </div>
@@ -113,7 +113,7 @@
             <div class="card-header">
               <h4>Herb</h4>
             </div>
-            <table class="table table-striped">
+            <table class="table table-striped" id="myTable">
               <thead class="thead-dark">
                 <tr>
                   <th>#</th>
@@ -209,6 +209,16 @@
             }
         );
     </script>
+   <script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
 </body>
 
 </html>
