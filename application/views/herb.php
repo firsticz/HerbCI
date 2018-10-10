@@ -96,7 +96,7 @@
         <div class="col-md-1 ml-auto">
           <div class="input-group">
             <div class="input-group">
-              <a href="<?php echo base_url() ?>main/insertherb" class="btn btn-success">Input</a>
+              <a href="<?php echo base_url() ?>main/insertherb" class="btn btn-success">Insert</a>
             </div>
           </div>
         </div>

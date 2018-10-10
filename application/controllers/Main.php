@@ -14,6 +14,9 @@ class Main extends CI_Controller {
 	{
         $this->load->view('header');
         $this->load->view('menu');
+        $this->load->view('herbsearch');
+        $this->load->view('symptomsearch');
+        $this->load->view('symptomgroupsearch');
         $this->load->view('footer');
 	}
 
