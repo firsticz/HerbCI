@@ -113,5 +113,9 @@ class Main extends CI_Controller {
         $this->load->view('header');
         $this->load->view('searchscore');
     }
+    public function login2()
+    {
+        $this->load->view('login2');
+    }
 
 }
