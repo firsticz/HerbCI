@@ -3,12 +3,15 @@
     <div class="row">
         <div class="col-md-5">
         <div class="form-group">
-        <h2> Herb</h2> 
+        <h2>Insert Herb</h2> 
+        <label >Herbname</label><br>
         <label class="sr-only"  for="field-name">Herbname</label>
             <input type="text" class="form-control" id="field-name" placeholder="Herb Name"><br><br>
             <div data-role="dynamic-fields">
             <div class="form-inline">
+            <label >Properties</label><br>
             <textarea type="text" class="form-control" id="field-name" rows="4" cols="50"  placeholder="Properties"></textarea><br><br>
+            <label >Warning</label><br>
             <textarea type="text" class="form-control" id="field-name" rows="4" cols="50"  placeholder="Warning "></textarea>
             <button class="btn btn-danger" data-role="remove">
                 <span class="glyphicon glyphicon-remove"></span>
@@ -19,7 +22,7 @@
             </div>  <!-- /div.form-inline -->
             </div>  <!-- /div[data-role="dynamic-fields"] -->
         </div>  <!-- /div.col-md-12 -->
-        <br><button type="button" class="btn btn-primary">Primary</button>
+        <br><button type="button" class="btn btn-primary">Insert</button>
     </div>  <!-- /div.row --><br>
     </div>
 </div>	<script type="text/javascript">

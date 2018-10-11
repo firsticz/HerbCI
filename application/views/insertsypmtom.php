@@ -8,7 +8,7 @@
                 <input type="text" class="form-control" id="symptomname"><br>
                 <div class="form-row">
                 <label >Group Symptom</label><br>
-                <input type="text" class="form-control" id="symptomname"><br>
+                <input type="text" class="form-control" id="symptomname"><br>   
                 <div data-role="dynamic-fields">
                 <div class="form-inline">
                 <label >Drug Formula</label><br>
