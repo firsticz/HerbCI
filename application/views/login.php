@@ -69,7 +69,7 @@
                             <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinlink" href="#" onclick="$('#signupbox').hide(); $('#loginbox').show()">Sign In</a></div>
                         </div>  
                         <div class="panel-body" >
-                            <form id="signupform" class="form-horizontal" role="form" action="signup">
+                            <div id="signupform" class="form-horizontal" role="form" action="signup">
                                 
                                 <div id="signupalert" style="display:none" class="alert alert-danger">
                                     <p>Error:</p>
@@ -130,7 +130,7 @@
                                 
                                 
                                 
-                            </form>
+                            </div>
                          </div>
                     </div>
 
