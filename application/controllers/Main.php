@@ -30,10 +30,10 @@ class Main extends CI_Controller {
 		$this->load->view('header1');
         $this->load->view('insertherb');
     }
-    public function insertsymtom()
+    public function insertsypmtom()
 	{
 		$this->load->view('header1');
-        $this->load->view('insertsymtom');
+        $this->load->view('insertsypmtom');
 	}
 
 	public function login()

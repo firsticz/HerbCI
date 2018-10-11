@@ -8,15 +8,15 @@
             <input type="text" class="form-control" id="field-name" placeholder="Herb Name"><br><br>
             <div data-role="dynamic-fields">
             <div class="form-inline">
-                        <textarea type="text" class="form-control" id="field-name" rows="4" cols="50"  placeholder="Properties"></textarea><br><br>
-                        <textarea type="text" class="form-control" id="field-name" rows="4" cols="50"  placeholder="Warning "></textarea>
-                    <button class="btn btn-danger" data-role="remove">
-                        <span class="glyphicon glyphicon-remove"></span>
-                    </button>
-                    <button class="btn btn-primary" data-role="add">
-                        <span class="glyphicon glyphicon-plus"></span>
-                    </button>
-                </div>  <!-- /div.form-inline -->
+            <textarea type="text" class="form-control" id="field-name" rows="4" cols="50"  placeholder="Properties"></textarea><br><br>
+            <textarea type="text" class="form-control" id="field-name" rows="4" cols="50"  placeholder="Warning "></textarea>
+            <button class="btn btn-danger" data-role="remove">
+                <span class="glyphicon glyphicon-remove"></span>
+            </button>
+            <button class="btn btn-primary" data-role="add">
+                <span class="glyphicon glyphicon-plus"></span>
+            </button>
+            </div>  <!-- /div.form-inline -->
             </div>  <!-- /div[data-role="dynamic-fields"] -->
         </div>  <!-- /div.col-md-12 -->
         <br><button type="button" class="btn btn-primary">Primary</button>
