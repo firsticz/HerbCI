@@ -45,7 +45,7 @@ class Main extends CI_Controller {
 	{
 		$this->load->view('header2');
 		$this->load->view('login');
-		$this->load->view('script');
+		// $this->load->view('script');
 	}
 
 	// function login_user(){

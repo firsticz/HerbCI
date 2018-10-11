@@ -11,9 +11,7 @@
                         <div class="p-5 bg-green text-white">
                             <div class="d-flex flex-row justify-content-between align-items-center">
                                 <h1 class="display-4">Mhunprai</h1>
-                                <a class="btn btn-dark" href="<?php echo base_url() ?>main/login" role="button" 
-                                target="popup" 
-                                onclick="window.open('main/login','popup','width=600,height=600'); return false;">
+                                <a class="btn btn-dark" href="<?php echo base_url() ?>main/login">
                                     Login</a>
                             </div>
                         </div>

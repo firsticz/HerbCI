@@ -11,7 +11,7 @@
 
                         <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
                             
-                        <form id="loginform" class="form-horizontal" role="form" action="<?php echo base_url('Main/login_user'); ?>">
+                        <!-- <form id="loginform" class="form-horizontal" role="form"> -->
                                     
                             <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -38,7 +38,7 @@
                                     <!-- Button -->
 
                                     <div class="col-sm-12 controls">
-                                      <a id="btn-login" type="submit" class="btn btn-success">Login  </a>
+                                      <a id="login" type="button" class="btn btn-success">Login  </a>
                                       <a id="btn-fblogin" href="#" class="btn btn-primary">Login with Facebook</a>
 
                                     </div>
@@ -55,7 +55,7 @@
                                         </div>
                                     </div>
                                 </div>    
-                            </form>     
+                            <!-- </form>      -->
 
 
 
@@ -101,14 +101,14 @@
                                 <div class="form-group">
                                     <label for="username" class="col-md-3 control-label">Username</label>
                                     <div class="col-md-9">
-                                        <input type="text" class="form-control" name="username" placeholder="Username">
+                                        <input type="text" class="form-control" name="username2" id="username2" placeholder="Username">
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <label for="password" class="col-md-3 control-label">Password</label>
                                     <div class="col-md-9">
-                                        <input type="password" class="form-control" name="passwd" placeholder="Password">
+                                        <input type="password" class="form-control" name="password2" id="password2" placeholder="Password">
                                     </div>
                                 </div>
 
@@ -139,4 +139,22 @@
                 
          </div> 
     </div>
-    
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="<?php echo base_url() ?>assets/js/setup.js"></script>
+    <script>
+        $("#login").click(function (e) { 
+            e.preventDefault();
+            var data = {
+                "username": $("#username").val(),
+                "password": $("#password").val()
+            }
+            $.post("http://localhost:8080/Mhunpris/api/user/search", data,
+            function (data, textStatus, jqXHR) {
+                var username = data.uername;
+                localStorage.setItem("username", username);
+                window.location.href = "localhost/HerbCI/";
+            }
+        );
+        });
+    </script>
