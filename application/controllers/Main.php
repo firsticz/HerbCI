@@ -20,15 +20,20 @@ class Main extends CI_Controller {
         $this->load->view('footer');
 	}
 
-	public function insertsymptom()
+	public function insertgroup()
 	{
-		$this->load->view('header');
-        $this->load->view('insertsypmtom');
+		$this->load->view('header1');
+        $this->load->view('insertgroup');
     }
     public function insertherb()
 	{
-		$this->load->view('header');
+		$this->load->view('header1');
         $this->load->view('insertherb');
+    }
+    public function insertsypmtom()
+	{
+		$this->load->view('header1');
+        $this->load->view('insertsypmtom');
 	}
 
 	public function login()
