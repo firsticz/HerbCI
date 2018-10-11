@@ -2,11 +2,12 @@
     <div class="container">
     <div class="row">
         <div class="col-md-12">
+        <h1>Insert Herb Group</h1>
             <div data-role="dynamic-fields">
                 <div class="form-inline">
                 <div class="form-group">
-                <h1>Insert Herb</h1>
-                <label class="sr-only"  for="field-name">ชื่อกลุ่มอาการ</label>
+                
+                <label >Name Symtom Group</label><br>
                  <input type="text" class="form-control" id="field-name" placeholder="Name Symtom Group"><br><br> 
                     <button class="btn btn-danger" data-role="remove">
                         <span class="glyphicon glyphicon-remove"></span>
