@@ -22,17 +22,17 @@ class Main extends CI_Controller {
 
 	public function insertgroup()
 	{
-		$this->load->view('header');
+		$this->load->view('header1');
         $this->load->view('insertgroup');
     }
     public function insertherb()
 	{
-		$this->load->view('header');
+		$this->load->view('header1');
         $this->load->view('insertherb');
     }
     public function insertsymtom()
 	{
-		$this->load->view('header');
+		$this->load->view('header1');
         $this->load->view('insertsymtom');
 	}
 
