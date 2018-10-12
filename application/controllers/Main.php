@@ -122,4 +122,30 @@ class Main extends CI_Controller {
         $this->load->view('symptomgroup');
     }
 
+    public function index2()
+	{
+        $this->load->view('index2');
+    }
+    
+    public function index2login()
+	{
+        $this->load->view('index2login');
+    }
+    
+    public function herbsearch2()
+	{
+        $this->load->view('herbsearch2');
+    }
+    
+    public function symtomsearch2()
+	{
+        $this->load->view('symtomsearch2');
+    }
+    
+    public function symtomgroupsearch2()
+	{
+        $this->load->view('symtomgroupsearch2');
+	}
+
+
 }

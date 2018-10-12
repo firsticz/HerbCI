@@ -12,7 +12,7 @@
                 <div data-role="dynamic-fields">
                 <div class="form-inline">
                 <label >Herb</label><br>
-                <input type="text" class="form-control"  id="field-name"  id="Herb" ><br>
+                <textarea type="text" class="form-control" id="field-name" rows="4" cols="50"  placeholder="Herb"></textarea><br><br>
                 <label >Weight</label><br>
                 <input type="text" class="form-control"  id="field-name"  id="weight" >
                 <button class="btn btn-danger" data-role="remove">
