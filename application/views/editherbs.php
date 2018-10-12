@@ -1,4 +1,3 @@
-<?php header('Content-Type: text/html; charset=utf-8'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -102,7 +101,7 @@
                 </div>
                 <div class="form-group">
                   <label for="title">Herb Name</label>
-                  <input type="text" name="herbname" id="herbname" class="form-control" value="<?php echo $herbname; ?>">
+                  <input type="text" name="herbname" id="herbname" class="form-control" value="<?php echo urldecode($herbname); ?>">
                 </div>
                 
                 
@@ -111,7 +110,7 @@
                   <?php
                   $i = 1;
                   foreach($properties as $value) {
-                  echo  '<input type="text" name="properties" id="properties'.$i.'" class="form-control" value="'.$value.'"><label></label>';
+                  echo  '<input type="text" name="properties" id="properties'.$i.'" class="form-control" value="'.urldecode($value).'"><label></label>';
                   $i++;
                   }
                   ?>
