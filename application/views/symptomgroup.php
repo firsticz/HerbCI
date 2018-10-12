@@ -69,7 +69,7 @@
       <div class="row">
         <div class="col-md-6">
           <h1>
-            <i class="fas fa-pencil-alt"></i> Herb</h1>
+            <i class="fas fa-pencil-alt"></i> SymptomGroup</h1>
         </div>
       </div>
     </div>
@@ -117,9 +117,7 @@
               <thead class="thead-dark">
                 <tr>
                   <th>#</th>
-                  <th>herbname</th>
-                  <th>properties</th>
-                  <th>warning</th>
+                  <th>SymtompgroupName</th>
                   <th></th>
                 </tr>
               </thead>
@@ -183,7 +181,7 @@
   <script>
         let herbs = $("#herbs");
         let i = 1;
-        $.post("http://localhost:8080/Mhunpris/api/herb/findAll", {},
+        $.post("http://localhost:8080/Mhunpris/api/symtomgroup/findAll", {},
             function (data, textStatus, jqXHR) {
                 console.log(data);
                 var listOfherb = data.data;
@@ -191,16 +189,14 @@
                 $.each(listOfherb, function( index, value ) {
                     strHerb += '<tr>'
                             + '<td>'+i+'</td>'
-                            + '<td>'+value.herbname+'</td>'
-                            + '<td>'+value.properties+'</td>'
-                            + '<td>'+value.warning+'</td>'
+                            + '<td>'+value.SymtomGroupName+'</td>'
                             + '<td>'
                             + '<a href="editherb/'+value._id+'/'+value.herbname+'/'+value.properties+'/'+value.warning+'" class="btn btn-info">'
                             + '<i class="far fa-edit"></i> Edit'
                             + '</a> &nbsp;'
-                            + '<button class="btn btn-danger" onclick="deleteHerb(\''+value._id+'\')">'
+                            + '<a href="deleteherb/'+value._id+'" class="btn btn-danger">'
                             + '<i class="far fa-trash-alt"></i> Delete'
-                            + '</button>'
+                            + '</a>'
                             + '</td>'
                             + '</tr>';
                             i++;            
@@ -218,21 +214,6 @@ $(document).ready(function(){
     });
   });
 });
-
-function deleteHerb(herbId){
-  $.ajax({
-    type: "delete",
-    url: "http://localhost:8080/Mhunpris/api/herb/delete",
-    data: JSON.stringify({
-      "id": herbId
-    }),
-    dataType: "json",
-    success: function (response) {
-      alert(response.message);
-    }
-  });
-}
-
 </script>
 </body>
 

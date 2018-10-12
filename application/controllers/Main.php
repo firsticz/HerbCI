@@ -117,5 +117,9 @@ class Main extends CI_Controller {
     {
         $this->load->view('login2');
     }
+    public function getsymptomgroup()
+	{
+        $this->load->view('symptomgroup');
+    }
 
 }
