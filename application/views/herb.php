@@ -1,3 +1,4 @@
+<?php header('Content-Type: text/html; charset=utf-8'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -229,6 +230,7 @@ function deleteHerb(herbId){
     dataType: "json",
     success: function (response) {
       alert(response.message);
+      window.location.href = "<?php echo base_url() ?>main/getherb";
     }
   });
 }
