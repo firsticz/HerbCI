@@ -1,6 +1,5 @@
 
         var usernamelocal = localStorage.getItem("usernamelocal");
-        console.log(usernamelocal)
         let navlogin = $("#navlogin");
         var strnav;
         if(usernamelocal == null){
@@ -53,5 +52,6 @@
 
     function navlogout(){
         localStorage.removeItem("usernamelocal");
+        alert("ออกจากระบบสำเร็จ")
         window.location.href = "index2";
     }
