@@ -11,7 +11,7 @@
 
                         <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
                             
-                        <!-- <form id="loginform" class="form-horizontal" role="form"> -->
+                        <form id="loginform" class="form-horizontal" role="form">
                                     
                             <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -38,7 +38,7 @@
                                     <!-- Button -->
 
                                     <div class="col-sm-12 controls">
-                                      <a id="login" type="button" class="btn btn-success">Login  </a>
+                                      <input id="login" type="submit" class="btn btn-success" value="Login">
                                       <a id="btn-fblogin" href="#" class="btn btn-primary">Login with Facebook</a>
 
                                     </div>
@@ -55,7 +55,7 @@
                                         </div>
                                     </div>
                                 </div>    
-                            <!-- </form>      -->
+                            </form>     
 
 
 
@@ -143,17 +143,26 @@
     crossorigin="anonymous"></script>
   <script src="<?php echo base_url() ?>assets/js/setup.js"></script>
     <script>
-        $("#login").click(function (e) { 
+        $("#loginform").submit(function (e) { 
             e.preventDefault();
-            var data = {
-                "username": $("#username").val(),
-                "password": $("#password").val()
+            var formdata = {
+                "username": $("#login-username").val(),
+                "password": $("#login-password").val()
             }
-            $.post("http://localhost:8080/Mhunpris/api/user/search", data,
+            $.post("http://localhost:8080/Mhunpris/api/member/search", JSON.stringify(formdata),
             function (data, textStatus, jqXHR) {
-                var username = data.uername;
-                localStorage.setItem("username", username);
-                window.location.href = "localhost/HerbCI/";
+                if(data.data.length == 0){
+                    alert("เข้าสู่ระบบไม่สำเร็จ");
+                    window.location.href = "<?php echo base_url() ?>main/login";
+                }
+                else{
+                    var username = data.data[0].username;
+                    localStorage.setItem("usernamelocal", username);
+                    alert("เข้าสู่ระบบสำเร็จ");
+                    window.location.href = "<?php echo base_url() ?>main/index2";
+                    
+                    
+                }  
             }
         );
         });

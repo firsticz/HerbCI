@@ -19,42 +19,8 @@
     <title>Symtom Search</title>
 </head>
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Mhunpri</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="about.html">Home</a>
-                </li> -->
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="services.html">HerbSearch</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">SymtomSearch</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">SymtomGroupSearch</a>
-                </li> -->
-                <li class="nav-item">
-                    <a class="nav-link" href="<?php echo base_url()?>main/login">Login</a>
-                </li>
-                <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Login
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                    <a class="dropdown-item" href="portfolio-1-col.html">Sign in</a>
-                    <a class="dropdown-item" href="portfolio-2-col.html">Sign up</a>
-                    </div>
-                </li> -->
-                </li>
-                </ul>
-            </div>
-        </div>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top" id="navlogin">
+        
     </nav>
 
 
@@ -68,7 +34,7 @@
 
     <ol class="breadcrumb">
     <li class="breadcrumb-item">
-        <a href="index.html">Home</a>
+        <a href="index2">Home</a>
     </li>
     <li class="breadcrumb-item active">Symtom Search</li>
     </ol>
@@ -139,7 +105,6 @@
                 </div>
             </div>
         </footer>
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="<?php echo base_url() ?>assets/js/navlogin.js"></script>
 </body>
 </html>

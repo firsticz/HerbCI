@@ -34,7 +34,7 @@
 
     <ol class="breadcrumb">
     <li class="breadcrumb-item">
-        <a href="index.html">Home</a>
+        <a href="index2">Home</a>
     </li>
     <li class="breadcrumb-item active">Herb Search</li>
     </ol>

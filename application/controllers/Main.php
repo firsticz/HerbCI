@@ -48,11 +48,6 @@ class Main extends CI_Controller {
 		// $this->load->view('script');
 	}
 
-	public function loout()
-	{
-
-    }
-
     public function getherb()
 	{
         $this->load->view('herb');
