@@ -22,7 +22,7 @@
             e.preventDefault();
             var formdata = {
                 "username": $("#username").val(),
-                "password": $("#password").val(),
+                "password": $("#password").val()
             }
             $.post("http://localhost:8080/Mhunpris/api/member/search", JSON.stringify(formdata),
             function (data, textStatus, jqXHR) {
