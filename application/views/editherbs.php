@@ -65,7 +65,7 @@
       <div class="row">
         <div class="col-md-6">
           <h1>
-            Post One</h1>
+            Herb</h1>
         </div>
       </div>
     </div>
@@ -77,7 +77,7 @@
       <div class="row">
         <div class="col-md-3">
           <a href="<?php echo base_url() ?>main/getherb" class="btn btn-light btn-block">
-            <i class="fas fa-arrow-left"></i> Back To Dashboard
+            <i class="fas fa-arrow-left"></i> Back To Herb
           </a>
         </div>
       </div>
@@ -91,7 +91,7 @@
         <div class="col">
           <div class="card">
             <div class="card-header">
-              <h4>Edit Post</h4>
+              <h4>Edit Herb</h4>
             </div>
             <div class="card-body">
               <form id="update">

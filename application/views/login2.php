@@ -26,9 +26,19 @@
             }
             $.post("http://localhost:8080/Mhunpris/api/member/search", JSON.stringify(formdata),
             function (data, textStatus, jqXHR) {
-                var username = data.uername;
-                localStorage.setItem("username", username);
-                window.location.href = "<?php echo base_url() ?>";
+                if(data.data.length == 0){
+                    alert("เข้าสู่ระบบไม่สำเร็จ");
+                    window.location.href = "<?php echo base_url() ?>main/login2";
+                }
+                else{
+                    var username = data.data[0].username;
+                    var pass = data.data[0].password;
+                    localStorage.setItem("usernamelocal", username);
+                    alert("เข้าสู่ระบบสำเร็จ");
+                    window.location.href = "<?php echo base_url() ?>main/index2";
+                    
+                    
+                }  
             }
         );
         });
