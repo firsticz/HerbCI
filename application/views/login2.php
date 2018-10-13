@@ -31,6 +31,7 @@
                     window.location.href = "<?php echo base_url() ?>main/login2";
                 }
                 else{
+                    var username = data.data[0].username;
                     localStorage.setItem("usernamelocal", username);
                     alert("เข้าสู่ระบบสำเร็จ");
                     window.location.href = "<?php echo base_url() ?>main/index2";
