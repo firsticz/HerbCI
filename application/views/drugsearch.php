@@ -39,7 +39,7 @@
     <li class="breadcrumb-item active">DrugFormula Search</li>
     </ol>
 
-    <img class="img-fluid rounded mb-4" src="<?php echo base_url() ?>assets/img/brandsymtom.jpg" alt="">
+    <img class="img-fluid rounded mb-4" src="<?php echo base_url() ?>assets/img/brandrug.jpg" alt="">
     <div class="row justify-content-center align-items-center">
         <div class="card col-lg-6 mb-4">
                 <h5 class="card-header">DrugFormula Search</h5>
