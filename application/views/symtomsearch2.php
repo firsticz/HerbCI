@@ -28,7 +28,7 @@
     <div class="container">
 
     <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">Symtom
+    <h1 class="mt-4 mb-3">Symptom
     <small>Search</small>
     </h1>
 
@@ -42,7 +42,7 @@
     <img class="img-fluid rounded mb-4" src="<?php echo base_url() ?>assets/img/brandsymtom.jpg" alt="">
     <div class="row justify-content-center align-items-center">
         <div class="card col-lg-6 mb-4">
-                <h5 class="card-header">Symtom Search</h5>
+                <h5 class="card-header">Symptom Search</h5>
                 <div class="card-body text-center">
                     <img src="<?php echo base_url() ?>assets/img/symtom.jpg" alt="">
                     <div class="input-group">
