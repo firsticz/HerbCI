@@ -82,9 +82,9 @@
         </div>
         <div class="col-lg-4 mb-4">
             <div class="card h-100">
-            <h4 class="card-header">SymtomSearch</h4>
+            <h4 class="card-header">DrugFormulaSearch</h4>
             <div class="card-body text-center">
-                <img src="<?php echo base_url() ?>assets/img/symtom.jpg" alt="">
+                <img src="<?php echo base_url() ?>assets/img/drug.jpg" alt="">
             </div>
             <div class="card-footer">
                 <a href="<?php echo base_url()?>main/symtomsearch2" class="btn btn-primary">Use Service</a>
