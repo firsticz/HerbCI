@@ -16,7 +16,7 @@
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
     <link href="http://cdn.phpoll.com/css/animate.css" rel="stylesheet">
    
-    <title>SymtomGroup Search</title>
+    <title>Symtom Search</title>
 </head>
 <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top" id="navlogin">
