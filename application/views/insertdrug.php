@@ -1,7 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <body>
 <div class="container">  
 <div class="row">
@@ -17,37 +13,40 @@
 <span id="temp1"></span>
 <span id="temp2"></span>
 <span id="temp3"></span>
+
 <script>
 $(document).ready(function(){
     var str = "";
     str = 
-            '<p class="herb1">Herb Name<textarea class="form-control herb" rows="1" cols="50">'
-			+'</textarea>Weight<textarea class="form-control weight" rows="1" cols="50">'
-			+'</textarea></p>';
+            '<p class="herb1"><label>Herb Name</label><textarea type="text" class="form-control herb" rows="1" cols="50">'
+			+'</textarea><label>Weight</label><textarea class="form-control weight" rows="1" cols="50">'
+			+'</textarea></p>'; 
 
             $("#temp1").append(str);
-    str = '<p class="use">Use<textarea class="form-control use" rows="4" cols="50">'
+            
+    str = '<p class="use"><label>Use</label><textarea type="text" class="form-control use" rows="4" cols="50">'
 			+'</textarea></p>';
 
             $("#temp2").append(str);
-    str = '<p class="warning">Warning<textarea class="form-control warning" rows="4" cols="50">'
+    str = '<p class="warning"><label>Warning</label><textarea type="text" class="form-control warning" rows="4" cols="50">'
 			+'</textarea></p>';
 
 			$("#temp3").append(str);
     $("#create").click(function(){
           str = 
-            '<p class="herb1">Herb Name<textarea class="form-control herb" rows="1" cols="50">'
-			+'</textarea>Weight<textarea class="form-control weight" rows="1" cols="50">'
+            '<p class="herb1"><label>Herb Name*</label><textarea type="text" class="form-control herb" rows="1" cols="50">'
+			+'</textarea><label>Weight*</label><textarea class="form-control weight" rows="1" cols="50">'
 			+'</textarea></p>';
 
-			$("#temp1").append(str);
+            $("#temp1").append(str);
+            
     });       
     $("#removeHerb").click(function(){
             $('.herb1').remove(); 
     });
 
     $("#createUse").click(function(){
-        str = '<p class="use">Use<textarea class="form-control use" rows="4" cols="50">'
+        str = '<p class="use"><label>Use*</label><textarea type="text" class="form-control use" rows="4" cols="50">'
 			+'</textarea></p>';
 
 			$("#temp2").append(str);
@@ -57,8 +56,8 @@ $(document).ready(function(){
     });
 
     $("#createWarning").click(function(){
-        str = '<p class="warning">Warning<textarea class="form-control warning" rows="4" cols="50">'
-			+'</textarea></p>';
+        str = '<p class="warning"><label>Warning*</label><textarea type="text" class="form-control warning" rows="4" cols="50">'
+			+'</textarea></p>'; 
 
 			$("#temp3").append(str);
     });
@@ -68,7 +67,7 @@ $(document).ready(function(){
 
     $("#insert").click(function(){
     	var obj = {
-            "drugname" : $("#drugname").val(),
+            "drugName" : $("#drugName").val(),
             "recipetype" : $("#recipetype").val(),
             "herb" : null,
             "use":null,
@@ -78,26 +77,26 @@ $(document).ready(function(){
     	var arr = [];
         $( ".herb1" ).each(function( index ) {
         	//arr[index] = $( this ).val();
-            var name = $( this ).children(".herb").val();
+            var herb = $( this ).children(".herb").val();
             var weight = $( this ).children(".weight").val();
             arr.push({
-            	"name": name,
+            	"herb": herb,
                 "weight": weight
             });
         });
-        obj.herb = arr;
+        obj.herb1 = arr;
 
         var arr = [];
         $( ".use" ).each(function( index ) {
-        	arr[index] = $( this ).val();
+        	arr[index] = $( this )  .val();
         });
-        obj.use = arr;
+        // obj.use = arr;
 
         var arr = [];
         $( ".warning" ).each(function( index ) {
         	arr[index] = $( this ).val();
         });
-        obj.use = arr;
+        // obj.warning = arr;
 
         console.log(obj); //ติด
 
@@ -109,11 +108,11 @@ $(document).ready(function(){
     })
 });
 </script>
-</head>
+
 <body>
-<button id="create" class="btn">Insert Herb</button>   <button id="removeHerb" class="btn">Remove Herb</button><br><br><br>
-<button id="createUse" class="btn">Insert Use</button>  <button id="removeUse" class="btn">Remove Use</button><br><br><br>
-<button id="createWarning" class="btn">Insert Warning</button>  <button id="removeWarning" class="btn">Remove Warning</button><br><br><br>
-<br><button type="button" class="btn btn-primary" id="insert" >Insert</button> 
+<button id="create" class="btn btn-success">Insert Herb</button>   <button id="removeHerb" class="btn btn-danger">Remove Herb</button><br><br><br>
+<button id="createUse" class="btn btn-success">Insert Use</button>  <button id="removeUse" class="btn btn-danger">Remove Use</button><br><br><br>
+<button id="createWarning" class="btn btn-success">Insert Warning</button>  <button id="removeWarning" class="btn btn-danger">Remove Warning</button><br><br><br>
+<br><button type="button" class="btn btn-primary btn-lg" id="insert" >Insert</button> 
 </body>
 </html>
