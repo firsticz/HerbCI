@@ -19,8 +19,7 @@
     <title>Mhunpri</title>
 </head>
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top" id="navlogin">
-        
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top" id="navlogin"> 
     </nav>
 
 
