@@ -97,6 +97,11 @@ class Main extends CI_Controller {
     public function symptomsearch2()
 	{
         $this->load->view('symptomsearch2');
+    }
+    
+    public function demoresult()
+	{
+        $this->load->view('demoresult');
 	}
 
 
