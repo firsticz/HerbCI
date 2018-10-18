@@ -1,11 +1,4 @@
 {
-    "idherb" : "",
-    "herbname" : "",
-	"properties" : [
-        ""
-    ]
-}
-{
     "idherbherb" : "001",
     "herbname" : "ดอกพิกุล",
 	"properties" : [
@@ -1013,26 +1006,5 @@
     "herbname" : "โกฐจุฬาลำพา",
 	"properties" : [
         "บรรเทาอาการริดสีดวงทวารหนัก"
-    ]
-}
-{
-    "idherb" : "141",
-    "herbname" : "",
-	"properties" : [
-        ""
-    ]
-}
-{
-    "idherb" : "142",
-    "herbname" : "",
-	"properties" : [
-        ""
-    ]
-}
-{
-    "idherb" : "141",
-    "herbname" : "",
-	"properties" : [
-        ""
     ]
 }

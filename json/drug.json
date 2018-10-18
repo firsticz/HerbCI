@@ -1,0 +1,152 @@
+{
+	"idSymtomGroup" : "01", //กลุ่มอาการ ดูในไฟล์ json symtomGroup
+	"SymtomName" : "ยารักษากลุ่มอาการทางระบบไหลเวียนโลหิต", // ชื่ออาการ
+	"idDrugFormula" : "001" // ใส่ 00ไว้ก่อน รอเวียร์ทำเสร็จ
+}
+{
+	"idSymtomGroup" : "02", //กลุ่มอาการ ดูในไฟล์ json symtomGroup
+	"SymtomName" : "ยารักษากลุ่มอาการทางระบบทางเดินอาหาร", // ชื่ออาการ
+	"idDrugFormula" : "002" // ใส่ 00ไว้ก่อน รอเวียร์ทำเสร็จ
+}
+{
+	"idSymtomGroup" : "03", //กลุ่มอาการ ดูในไฟล์ json symtomGroup
+	"SymtomName" : "กลุ่มยาบรรเทาอาการท้องผูก", // ชื่ออาการ
+	"idDrugFormula" : "003" // ใส่ 00ไว้ก่อน รอเวียร์ทำเสร็จ
+}
+{
+	"idSymtomGroup" : "04", //กลุ่มอาการ ดูในไฟล์ json symtomGroup
+	"SymtomName" : "กลุ่มยาบรรเทาอาการแก้ท้องเสีย", // ชื่ออาการ
+	"idDrugFormula" : "004" // ใส่ 00ไว้ก่อน รอเวียร์ทำเสร็จ
+}
+{
+	"idSymtomGroup" : "05", //กลุ่มอาการ ดูในไฟล์ json symtomGroup
+	"SymtomName" : "กลุ่มยาบรรเทาริดสดีวงทวารหนัก", // ชื่ออาการ
+	"idDrugFormula" : "005" // ใส่ 00ไว้ก่อน รอเวียร์ทำเสร็จ
+}
+{
+	"idSymtomGroup" : "06", //กลุ่มอาการ ดูในไฟล์ json symtomGroup
+	"SymtomName" : "ยารักษากลุ่มอาการทางสตูิศาสตร์นรเีวชวิทยา", // ชื่ออาการ
+	"idDrugFormula" : "006" // ใส่ 00ไว้ก่อน รอเวียร์ทำเสร็จ
+}
+{
+	"idSymtomGroup" : "07", //กลุ่มอาการ ดูในไฟล์ json symtomGroup
+	"SymtomName" : "ยาแก้ไข้", // ชื่ออาการ
+	"idDrugFormula" : "007" // ใส่ 00ไว้ก่อน รอเวียร์ทำเสร็จ
+}
+{
+	"idSymtomGroup" : "08", //กลุ่มอาการ ดูในไฟล์ json symtomGroup
+	"SymtomName" : "ยารักษากลุ่มอาการของระบบทางเดินหายใจ", // ชื่ออาการ
+	"idDrugFormula" : "008" // ใส่ 00ไว้ก่อน รอเวียร์ทำเสร็จ
+}
+{
+	"idSymtomGroup" : "09", //กลุ่มอาการ ดูในไฟล์ json symtomGroup
+	"SymtomName" : "ยาบรรเทาอาการไอ", // ชื่ออาการ
+	"idDrugFormula" : "009" // ใส่ 00ไว้ก่อน รอเวียร์ทำเสร็จ
+}
+
+{
+	"idSymtomGroup" : "10", //กลุ่มอาการ ดูในไฟล์ json symtomGroup
+	"SymtomName" : "ยาบรรเทาอาการหวัด", // ชื่ออาการ
+	"idDrugFormula" : "010" // ใส่ 01ไว้ก่อน รอเวียร์ทำเสร็จ
+}
+{
+	"idSymtomGroup" : "11", //กลุ่มอาการ ดูในไฟล์ json symtomGroup
+	"SymtomName" : "ยาบำรุง โลหิต", // ชื่ออาการ
+	"idDrugFormula" : "011" // ใส่ 01ไว้ก่อน รอเวียร์ทำเสร็จ
+}
+{
+	"idSymtomGroup" : "12", //กลุ่มอาการ ดูในไฟล์ json symtomGroup
+	"SymtomName" : "ยารักษากลุ่มอาการทางกล้ามเนื้อและกระดูก", // ชื่ออาการ
+	"idDrugFormula" : "012" // ใส่ 01ไว้ก่อน รอเวียร์ทำเสร็จ
+}
+{
+	"idSymtomGroup" : "13", //กลุ่มอาการ ดูในไฟล์ json symtomGroup
+	"SymtomName" : "ยาสำหรับรับประทาน", // ชื่ออาการ
+	"idDrugFormula" : "013" // ใส่ 01ไว้ก่อน รอเวียร์ทำเสร็จ
+}
+{
+	"idSymtomGroup" : "14", //กลุ่มอาการ ดูในไฟล์ json symtomGroup
+	"SymtomName" : "ยาสำหรับใช้ภายนอก", // ชื่ออาการ
+	"idDrugFormula" : "014" // ใส่ 01ไว้ก่อน รอเวียร์ทำเสร็จ
+}
+{
+	"idSymtomGroup" : "15", //กลุ่มอาการ ดูในไฟล์ json symtomGroup
+	"SymtomName" : "ยาบำรุงธาตุ ปรับธาตุ", // ชื่ออาการ
+	"idDrugFormula" : "015" // ใส่ 01ไว้ก่อน รอเวียร์ทำเสร็จ
+}
+{
+	"idSymtomGroup" : "16", //กลุ่มอาการ ดูในไฟล์ json symtomGroup
+	"SymtomName" : "ยารักษากลุ่มอาการของระบบทางเดินอาหาร", // ชื่ออาการ
+	"idDrugFormula" : "016" // ใส่ 01ไว้ก่อน รอเวียร์ทำเสร็จ
+}
+{
+	"idSymtomGroup" : "17", //กลุ่มอาการ ดูในไฟล์ json symtomGroup
+	"SymtomName" : "กลุ่มยาขับลม บรรเทาอาการท้องอืด ท้องเฟ้อ", // ชื่ออาการ
+	"idDrugFormula" : "017" // ใส่ 01ไว้ก่อน รอเวียร์ทำเสร็จ
+}
+{
+	"idSymtomGroup" : "18", //กลุ่มอาการ ดูในไฟล์ json symtomGroup
+	"SymtomName" : "กลุ่มยาบรรเทาอาการท้องผูก", // ชื่ออาการ
+	"idDrugFormula" : "018" // ใส่ 01ไว้ก่อน รอเวียร์ทำเสร็จ
+}
+{
+	"idSymtomGroup" : "19", //กลุ่มอาการ ดูในไฟล์ json symtomGroup
+	"SymtomName" : "กลุ่มยาบรรเทาอาการท้องเสีย", // ชื่ออาการ
+	"idDrugFormula" : "019" // ใส่ 01ไว้ก่อน รอเวียร์ทำเสร็จ
+}
+{
+	"idSymtomGroup" : "20", //กลุ่มอาการ ดูในไฟล์ json symtomGroup
+	"SymtomName" : "กลุ่มยารักษาแผลในกระเพาะอาหาร", // ชื่ออาการ
+	"idDrugFormula" : "020" // ใส่ 01ไว้ก่อน รอเวียร์ทำเสร็จ
+}
+{
+	"idSymtomGroup" : "21", //กลุ่มอาการ ดูในไฟล์ json symtomGroup
+	"SymtomName" : "กลุ่มยาบรรเทาอาการคลื่นไส้อาเจียน", // ชื่ออาการ
+	"idDrugFormula" : "021" // ใส่ 01ไว้ก่อน รอเวียร์ทำเสร็จ
+}
+{
+	"idSymtomGroup" : "22", //กลุ่มอาการ ดูในไฟล์ json symtomGroup
+	"SymtomName" : "ยารักษากลุ่มอาการของระบบทางเดินหายใจ", // ชื่ออาการ
+	"idDrugFormula" : "022" // ใส่ 01ไว้ก่อน รอเวียร์ทำเสร็จ
+}
+{
+	"idSymtomGroup" : "23", //กลุ่มอาการ ดูในไฟล์ json symtomGroup
+	"SymtomName" : "ยารักษากลุ่มอาการทางระบบผิวหนัง", // ชื่ออาการ
+	"idDrugFormula" : "023" // ใส่ 01ไว้ก่อน รอเวียร์ทำเสร็จ
+}
+{
+	"idSymtomGroup" : "24", //กลุ่มอาการ ดูในไฟล์ json symtomGroup
+	"SymtomName" : "ยารักษากลุ่มอาการทางกล้ามเนื้อและกระดูก", // ชื่ออาการ
+	"idDrugFormula" : "024" // ใส่ 00ไว้ก่อน รอเวียร์ทำเสร็จ
+}
+{
+	"idSymtomGroup" : "25", //กลุ่มอาการ ดูในไฟล์ json symtomGroup
+	"SymtomName" : "ยาสำหรับรับประทาน", // ชื่ออาการ
+	"idDrugFormula" : "025" // ใส่ 00ไว้ก่อน รอเวียร์ทำเสร็จ
+}
+{
+	"idSymtomGroup" : "26", //กลุ่มอาการ ดูในไฟล์ json symtomGroup
+	"SymtomName" : "ยาสำหรับใช้ภายนอก", // ชื่ออาการ
+	"idDrugFormula" : "026" // ใส่ 00ไว้ก่อน รอเวียร์ทำเสร็จ
+}
+{
+	"idSymtomGroup" : "27", //กลุ่มอาการ ดูในไฟล์ json symtomGroup
+	"SymtomName" : "ยารักษากลุ่มอาการทางระบบทางเดินปัสสาวะ", // ชื่ออาการ
+	"idDrugFormula" : "027" // ใส่ 00ไว้ก่อน รอเวียร์ทำเสร็จ
+}
+{
+	"idSymtomGroup" : "28", //กลุ่มอาการ ดูในไฟล์ json symtomGroup
+	"SymtomName" : "ยาแก้ไข้แก้ร้อนใน", // ชื่ออาการ
+	"idDrugFormula" : "028" // ใส่ 00ไว้ก่อน รอเวียร์ทำเสร็จ
+}
+{
+	"idSymtomGroup" : "29", //กลุ่มอาการ ดูในไฟล์ json symtomGroup
+	"SymtomName" : "ยาถอนพิษเบื่อเมา", // ชื่ออาการ
+	"idDrugFormula" : "029" // ใส่ 00ไว้ก่อน รอเวียร์ทำเสร็จ
+}
+{
+	"idSymtomGroup" : "30", //กลุ่มอาการ ดูในไฟล์ json symtomGroup
+	"SymtomName" : "ยาลดความอยากบุหรี่", // ชื่ออาการ
+	"idDrugFormula" : "030" // ใส่ 00ไว้ก่อน รอเวียร์ทำเสร็จ
+}
+
