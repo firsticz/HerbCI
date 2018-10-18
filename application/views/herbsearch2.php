@@ -45,12 +45,14 @@
                 <h5 class="card-header">Herb Search</h5>
                 <div class="card-body text-center">
                     <img src="<?php echo base_url() ?>assets/img/herb.jpg" alt="">
+                    <form id="search">
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Herb name..">
                         <span class="input-group-btn">
                         <button class="btn btn-secondary" type="button">Go!</button>
                         </span>
                     </div>
+                    </form>
                 </div>
         </div>
     <div>
