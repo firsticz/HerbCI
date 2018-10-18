@@ -105,7 +105,7 @@
                         <div class="form-group col-md-6">
                             <label for="properties">สรรพคุณ</label>
                             <input type="text" class="properties form-control" id="properties" placeholder="กรอกสรรพคุณ..">
-                            <span id="temp"></span>
+                            <span id="temp"></span><br>
                             <button type="button" id="buttonproperties" class="btn btn-secondary btn-sm">เพิ่มสรรพคุณ</button>
                         </div>
                     </div>
@@ -113,7 +113,7 @@
                         <div class="form-group col-md-6">
                             <label for="warning">คำเตือน</label>
                             <input type="text" class="warning form-control" id="warning" placeholder="กรอกคำเตือน..">
-                            <span id="temp1"></span>
+                            <span id="temp1"></span><br>
                             <button type="button" id="buttonwarning" class="btn btn-secondary btn-sm">เพิ่มคำเตือน</button>
                         </div>
                     </div>

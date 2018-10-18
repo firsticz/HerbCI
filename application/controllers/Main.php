@@ -28,7 +28,6 @@ class Main extends CI_Controller {
     }
     public function insertdrug()
 	{
-		$this->load->view('header1');
         $this->load->view('insertdrug');
 	}
 
