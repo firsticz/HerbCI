@@ -3,28 +3,188 @@
     "drugName" : "ยาหอมทิพโอสถ ยาผง ยาเม็ด ยาผง (รพ.) ยาเม็ด (รพ.)",
     "recipeType" : "สูตรตำรับ",
     "herb" : [{
-        "idherb":null,
-        "weight":"183 กรัม"
-        },
-        {
-        "idherb":null,
-        "weight":"28 กรัม"
-        },
-        {
-        "idherb":null,
+        "idherb":"001",
         "weight":"4 กรัม"
         },
         {
-        "idherb":null,
+        "idherb":"002",
         "weight":"4 กรัม"
         },
         {
-        "idherb":null,
+        "idherb":"003",
+        "weight":"4 กรัม"
+        },
+        {
+        "idherb":"004",
+        "weight":"4 กรัม"
+        },
+        {
+        "idherb":"005",
+        "weight":"4 กรัม"
+        },
+        {
+        "idherb":"006",
+        "weight":"4 กรัม"
+        },
+        {
+        "idherb":"007",
+        "weight":"4 กรัม"
+        },
+        {
+        "idherb":"008",
+        "weight":"4 กรัม"
+        },
+        {
+        "idherb":"009",
+        "weight":"4 กรัม"
+        },
+        {
+        "idherb":"010",
+        "weight":"4 กรัม"
+        },
+        {
+        "idherb":"011",
+        "weight":"4 กรัม"
+        },
+        {
+        "idherb":"012",
+        "weight":"4 กรัม"
+        },
+        {
+        "idherb":"013",
+        "weight":"4 กรัม"
+        },
+        {
+        "idherb":"014",
+        "weight":"4 กรัม"
+        },
+        {
+        "idherb":"015",
+        "weight":"4 กรัม"
+        },
+        {
+        "idherb":"016",
+        "weight":"4 กรัม"
+        },
+        {
+        "idherb":"017",
+        "weight":"4 กรัม"
+        },
+        {
+        "idherb":"018",
+        "weight":"4 กรัม"
+        },
+        {
+        "idherb":"019",
+        "weight":"4 กรัม"
+        },
+        {
+        "idherb":"020",
+        "weight":"4 กรัม"
+        },
+        {
+        "idherb":"021",
+        "weight":"4 กรัม"
+        },
+        {
+        "idherb":"022",
+        "weight":"4 กรัม"
+        },
+        {
+        "idherb":"023",
+        "weight":"4 กรัม"
+        },
+        {
+        "idherb":"024",
+        "weight":"4 กรัม"
+        },
+        {
+        "idherb":"025",
+        "weight":"4 กรัม"
+        },
+        {
+        "idherb":"026",
+        "weight":"4 กรัม"
+        },
+        {
+        "idherb":"027",
+        "weight":"4 กรัม"
+        },
+        {
+        "idherb":"028",
+        "weight":"4 กรัม"
+        },
+        {
+        "idherb":"029",
         "weight":"2 กรัม"
         },
         {
-        "idherb":null,
+        "idherb":"030",
         "weight":"2 กรัม"
+        },
+        {
+        "idherb":"031",
+        "weight":"2 กรัม"
+        },
+        {
+        "idherb":"032",
+        "weight":"2 กรัม"
+        },
+        {
+        "idherb":"033",
+        "weight":"2 กรัม"
+        },
+        {
+        "idherb":"034",
+        "weight":"2 กรัม"
+        },
+        {
+        "idherb":"035",
+        "weight":"2 กรัม"
+        },
+        {
+        "idherb":"036",
+        "weight":"2 กรัม"
+        },
+        {
+        "idherb":"037",
+        "weight":"2 กรัม"
+        },
+        {
+        "idherb":"038",
+        "weight":"1 กรัม"
+        },
+        {
+        "idherb":"039",
+        "weight":"1 กรัม"
+        },
+        {
+        "idherb":"040",
+        "weight":"1 กรัม"
+        },
+        {
+        "idherb":"041",
+        "weight":"1 กรัม"
+        },
+        {
+        "idherb":"042",
+        "weight":"1 กรัม"
+        },
+        {
+        "idherb":"043",
+        "weight":"1 กรัม"
+        },
+        {
+        "idherb":"044",
+        "weight":"1 กรัม"
+        },
+        {
+        "idherb":"045",
+        "weight":"2 กรัม"
+        },
+        {
+        "idherb":"046",
+        "weight":"1 กรัม"
         }
         ],
 
@@ -43,17 +203,94 @@
     "drugName" : "ยาธาตบุรรจบ ยาแคปซูล ยาผง ยาลูกกลอน ยาแคปซูล (รพ.) ยาผง (รพ.) ยาลูกกลอน (รพ.)",
     "recipeType" : "สูตรตำรับ",
     "herb" : [{
-        "idherb":null,
+        "idherb":"047",
         "weight":"16 กรัม",
         },
     {
-        "idherb":null,
+        "idherb":"035",
         "weight":"8 กรัม"
     },
     {
-        "idherb":null,
-        "weight":"4 กรัม",
-    }],
+        "idherb":"048",
+        "weight":"4 กรัม"
+    },
+    {
+        "idherb":"030",
+        "weight":"4 กรัม"
+    },
+    {
+        "idherb":"036",
+        "weight":"4 กรัม"
+    },
+    {
+        "idherb":"032",
+        "weight":"4 กรัม"
+    },
+    {
+        "idherb":"029",
+        "weight":"4 กรัม"
+    },
+    {
+        "idherb":"038",
+        "weight":"4 กรัม"
+    },
+    {
+        "idherb":"039",
+        "weight":"4 กรัม"
+    },
+    {
+        "idherb":"042",
+        "weight":"4 กรัม"
+    },
+    {
+        "idherb":"041",
+        "weight":"4 กรัม"
+    },
+    {
+        "idherb":"049",
+        "weight":"4 กรัม"
+    },
+    {
+        "idherb":"027",
+        "weight":"4 กรัม"
+    },
+    {
+        "idherb":"028",
+        "weight":"4 กรัม"
+    },
+    {
+        "idherb":"050",
+        "weight":"4 กรัม"
+    },
+    {
+        "idherb":"018",
+        "weight":"4 กรัม"
+    },
+    {
+        "idherb":"051",
+        "weight":"4 กรัม"
+    },
+    {
+        "idherb":"052",
+        "weight":"4 กรัม"
+    },
+    {
+        "idherb":"053",
+        "weight":"4 กรัม"
+    },
+    {
+        "idherb":"054",
+        "weight":"4 กรัม"
+    },
+    {
+        "idherb":"022",
+        "weight":"4 กรัม"
+    },
+    {
+        "idherb":"046",
+        "weight":"4 กรัม"
+    },
+    ],
     "suggestion" :[" บรรเทาอาการท้องอืด ท้องเฟ้อ"],
     "use" :[ " ชนิดผงผู้ใหญ่ รับประทานคร้ังละ 1 กรัม ละลายน้ำกระสายยา วันละ 3 คร้ัง ก่อนอาหาร เมื่อมีอาการ เด็ก อายุ6 - 12 ปี รับประทานคร้ังละ 500 มิลลิกรัม ละลายน้ำกระสายยา วันละ 3 คร้ัง ก่อนอาหารเมื่อมีอาการ",
         "น้ำกระสายยาที่ใช้กรณีแก้ท้องอืด ท้องเฟ้อ ใช้กระเทียม 3 กลีบทุบ ชงน้ำร้อนหรือใช้ใบกะเพราต้มเป็นน้ำกระสายยาถ้าหาน้ำกระสายยาไม่ได้ให้ใช้น้ำสุกแทน",
@@ -69,28 +306,73 @@
     "drugName" : "ยาถ่ายดีเกลือฝรั่ง ยาแคปซูล ยาเม็ด",
     "recipeType" : "สูตรตำรับ",
     "herb" : [{
-        "idherb":null,
+        "idherb":"055",
         "weight":"60 กรัม"
     },{
-        "idherb":null,
+        "idherb":"056",
         "weight":"12 กรัม",
     },
     {
-        "idherb":null,
+        "idherb":"057",
         "weight":"3 กรัม"
-    },{
-        "idherb":null,
+    },
+    {
+        "idherb":"058",
         "weight":"3 กรัม"
-    },{
-        "idherb":null,
+    },
+    {
+        "idherb":"059",
         "weight":"3 กรัม"
-    },{
-        "idherb":null,
+    },
+    {
+        "idherb":"060",
         "weight":"3 กรัม"
-    },{
-        "idherb":null,
+    },
+    {
+        "idherb":"061",
         "weight":"3 กรัม"
-    }],
+    },
+    {
+        "idherb":"062",
+        "weight":"3 กรัม"
+    },
+    {
+        "idherb":"063",
+        "weight":"3 กรัม"
+    },
+    {
+        "idherb":"064",
+        "weight":"3 กรัม"
+    },
+    {
+        "idherb":"047",
+        "weight":"3 กรัม"
+    },
+    {
+        "idherb":"065",
+        "weight":"3 กรัม"
+    },
+    {
+        "idherb":"066",
+        "weight":"3 กรัม"
+    },
+    {
+        "idherb":"067",
+        "weight":"3 กรัม"
+    },
+    {
+        "idherb":"068",
+        "weight":"3 กรัม"
+    },
+    {
+        "idherb":"069",
+        "weight":"3 กรัม"
+    },
+    {
+        "idherb":"070",
+        "weight":"3 กรัม"
+    },
+],
     "suggestion" :[" ใช้บรรเทาอาการท้องผูก ในผู้ที่ท้องผูกมาก หรือเรื้อรัง ที่ใช้ยาอื่น แล้วไม่ได้ผล"],
     "use" :[ " ชนิดเม็ด และชนิดแคปซูล
         คร้ังแรก รับประทาน 1 กรัม วันละ 1 คร้ัง ก่อนนอน ถ้าไม่ถ่าย วันต่อไป
@@ -110,89 +392,94 @@
     "drugName" : "ยาริดสีดวงมหากาฬ",
     "recipeType" : "สูตรตำรับ",
     "herb" : [{
-        "idherb":null,
+        "idherb":"136",
         "weight":"5 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"137",
         "weight":"5 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"138",
         "weight":"5 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"139",
         "weight":"5 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"029",
         "weight":"5 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"140",
         "weight":"5 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"035",
         "weight":"70 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"036",
         "weight":"5 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"038",
         "weight":"5 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"049",
         "weight":"5 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"039",
         "weight":"5 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"122",
         "weight":"5 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"040",
         "weight":"5 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"019",
         "weight":"5 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"027",
         "weight":"5 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"028",
         "weight":"5 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"117",
         "weight":"5 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"018",
         "weight":"5 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"054",
         "weight":"5 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"079",
         "weight":"5 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"048",
         "weight":"5 กรัม"
-    }],
+    },
+    {
+        "idherb":"130",
+        "weight":"5 กรัม"
+    }
+    ],
     "suggestion" :[" บรรเทาอาการริดสีดวงทวารหนัก"],
     "use" :[ " รับประทานคร้ังละ 800 มิลลิกรัม - 1 กรัม วันละ 3 คร้ัง ก่อนอาหาร"],
     "warning" : [" ควรระวังการรับประทานร่วมกับยาในกลุ่มสารกันเลือดเป็นลิ่ม (anticoagulant)และยาต้านการจับตัวของเกล็ดเลือด (antiplatelets)",
@@ -201,52 +488,56 @@
 
 {
     "idDrugFormula": "005",
-    "drugName" : "ยาประสะไพล ยาแคปซูล ยาผง ยาเม็ด ยาลูกกลอน ยาแคปซูล (รพ.) ยาผง (รพ.) ยาลูกกลอน (รพ.)",
+    "drugName" : "ยาประสะไพล",
     "recipeType" : "สูตรตำรับ",
     "herb" : [{
-        "idherb":null,
+        "idherb":"076",
         "weight":"81 กรัม"
         },
     {
-        "idherb":null,
+        "idherb":"077",
         "weight":"8 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"020",
         "weight":"8 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"078",
         "weight":"8 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"068",
         "weight":"8 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"079",
         "weight":"8 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"054",
         "weight":"8 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"116",
         "weight":"8 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"080",
         "weight":"8 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"038",
         "weight":"8 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"081",
         "weight":"1 กรัม"
-     }],
+     },{
+        "idherb":"046",
+        "weight":"1 กรัม"
+     }
+    ],
 
     "suggestion" :["ระดูมาไม่สม่ำเสมอหรือมาน้อยกว่าปกติ",
        "บรรเทาอาการปวดประจำเดือน",
@@ -270,79 +561,75 @@
     "drugName" : "ยาเขียวหอม ยาผง ยาเม็ด (รพ.) ยาผง (รพ.)",
     "recipeType" : "สูตรตำรับ",
     "herb" : [{
-        "idherb":null,
+        "idherb":"053",
         "weight":"5 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"083",
         "weight":"5 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"084",
         "weight":"5 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"085",
         "weight":"5 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"086",
         "weight":"5 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"087",
         "weight":"5 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"022",
         "weight":"5 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"088",
         "weight":"5 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"012",
         "weight":"5 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"090",
         "weight":"5 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"091",
         "weight":"5 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"092",
         "weight":"5 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"093",
         "weight":"5 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"094",
         "weight":"5 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"001",
         "weight":"5 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"002",
         "weight":"5 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"003",
         "weight":"5 กรัม"
     },
     {
-        "idherb":null,
-        "weight":"5 กรัม"
-    },
-    {
-        "idherb":null,
+        "idherb":"005",
         "weight":"5 กรัม"
     }],
     "suggestion" :["บรรเทาอาการไข้ร้อนในกระหายน้ำ" "แก้พิษหัด พิษอีสุกอีใส (บรรเทาอาการไข้จากหัดและอีสุกอีใส)"],
@@ -361,66 +648,66 @@
 
 {
     "idDrugFormula": "007",
-    "drugName" : "ยาแก้ไอผสมกานพลูยาลูกกลอน (รพ.)",
+    "drugName" : "ยาแก้ไอผสมกานพลู",
     "recipeType" : "สูตรตำรับ",
     "herb" : [{
-        "idherb":null,
+        "idherb":"024",
         "weight":"48 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"095",
         "weight":"16 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"096",
         "weight":"10 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"097",
         "weight":"4 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"045",
         "weight":"3 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"098",
         "weight":"3 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"020",
         "weight":"2 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"099",
         "weight":"2 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"050",
         "weight":"2 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"100",
         "weight":"2 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"130",
         "weight":"2 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"101",
         "weight":"2 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"102",
         "weight":"2 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"103",
         "weight":"2 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"104",
         "weight":"2 กรัม"
     }],
     "suggestion" :["บรรเทาอาการไอ ขับเสมหะ"],
@@ -430,98 +717,98 @@
 
 {
     "idDrugFormula": "008",
-    "drugName" : "ยาปราบชมพูทวีป ยาแคปซูล (รพ.) ยาลูกกลอน (รพ.)",
+    "drugName" : "ยาปราบชมพูทวีป",
     "recipeType" : "สูตรตำรับ",
     "herb" : [{
-        "idherb":null,
+        "idherb":"105",
         "weight":"120 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"106",
         "weight":"120 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"107",
         "weight":"120 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"108",
         "weight":"10 กรัม"
     },   
     {
-        "idherb":null,
+        "idherb":"050",
         "weight":"10 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"109",
         "weight":"8 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"047",
         "weight":"8 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"110",
         "weight":"8 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"111",
         "weight":"8 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"116",
         "weight":"8 กรัม"
     },
     {
-        "idherb":null,
-        "weight":"3 กรัม"
+        "idherb":"049",
+        "weight":"6 กรัม"
     },
     {
-        "idherb":null,
-        "weight":"3 กรัม"
+        "idherb":"040",
+        "weight":"6 กรัม"
     },
     {
-        "idherb":null,
-        "weight":"3 กรัม"
+        "idherb":"112",
+        "weight":"6 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"038",
         "weight":"4 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"029",
         "weight":"4 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"030",
         "weight":"4 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"113",
         "weight":"4 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"114",
         "weight":"4 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"054",
         "weight":"2 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"การบรู",
         "weight":"2 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"027",
         "weight":"1 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"028",
         "weight":"1 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"051",
         "weight":"1 กรัม"
     }],
     "suggestion" :["บรรเทาอาการหวัดในระยะแรก และอาการเนื่อจากการแพ้อากาศ"],
