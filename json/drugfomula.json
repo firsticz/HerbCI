@@ -1,6 +1,6 @@
 {
     "idDrugFormula": "001",
-    "drugName" : "ยาหอมทิพโอสถ ยาผง ยาเม็ด ยาผง (รพ.) ยาเม็ด (รพ.)",
+    "drugName" : "ยาหอมทิพโอสถ",
     "recipeType" : "สูตรตำรับ",
     "herb" : [{
         "idherb":"001",
@@ -200,7 +200,7 @@
 
 {
     "idDrugFormula": "002",
-    "drugName" : "ยาธาตบุรรจบ ยาแคปซูล ยาผง ยาลูกกลอน ยาแคปซูล (รพ.) ยาผง (รพ.) ยาลูกกลอน (รพ.)",
+    "drugName" : "ยาธาตบุรรจบ",
     "recipeType" : "สูตรตำรับ",
     "herb" : [{
         "idherb":"047",
@@ -303,7 +303,7 @@
 
 {
     "idDrugFormula": "003",
-    "drugName" : "ยาถ่ายดีเกลือฝรั่ง ยาแคปซูล ยาเม็ด",
+    "drugName" : "ยาถ่ายดีเกลือฝรั่ง",
     "recipeType" : "สูตรตำรับ",
     "herb" : [{
         "idherb":"055",
@@ -558,7 +558,7 @@
 
 {
     "idDrugFormula": "006",
-    "drugName" : "ยาเขียวหอม ยาผง ยาเม็ด (รพ.) ยาผง (รพ.)",
+    "drugName" : "ยาเขียวหอม",
     "recipeType" : "สูตรตำรับ",
     "herb" : [{
         "idherb":"053",
@@ -824,158 +824,158 @@
 
 {
     "idDrugFormula": "009",
-    "drugName" : "ยาบำรุง โลหิต ยาแคปซูล ยาผง ยาเม็ด ยาแคปซูล (รพ.) ยาผง (รพ.) ยาเม็ด (รพ.)",
+    "drugName" : "ยาบำรุงโลหิต",
     "recipeType" : "สูตรตำรับ",
     "herb" : [{
-        "idherb":null,
+        "idherb":"011",
         "weight":"10 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"023",
         "weight":"10 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"115",
         "weight":"4 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"116",
         "weight":"2 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"054",
         "weight":"2 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"111",
         "weight":"2 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"117",
         "weight":"2 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"118",
         "weight":"2 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"119",
         "weight":"2 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"120",
         "weight":"2 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"121",
         "weight":"2 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"003",
         "weight":"2 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"001",
         "weight":"2 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"002",
         "weight":"2 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"005",
         "weight":"2 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"013",
         "weight":"1 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"027",
         "weight":"1 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"051",
         "weight":"1 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"050",
         "weight":"1 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"038",
         "weight":"1 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"049",
         "weight":"1 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"039",
         "weight":"1 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"122",
         "weight":"1 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"040",
         "weight":"1 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"029",
         "weight":"1 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"030",
         "weight":"1 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"031",
         "weight":"1 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"032",
         "weight":"1 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"033",
         "weight":"1 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"047",
         "weight":"1 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"065",
         "weight":"1 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"100",
         "weight":"1 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"016",
         "weight":"1 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"130",
         "weight":"1 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"012",
         "weight":"1 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"123",
         "weight":"1 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"124",
         "weight":"1 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"015",
         "weight":"1 กรัม"
     }],
     
@@ -992,122 +992,122 @@
 
 {
     "idDrugFormula": "010",
-    "drugName" : "ยากษัยเส้นยาลูกกลอน (รพ.)",
+    "drugName" : "ยากษัยเส้น",
     "recipeType" : "",
     "herb" : [{
-        "idherb":null,
+        "idherb":"054",
         "weight":"40 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"116",
         "weight":"20 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"118",
         "weight":"24 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"117",
         "weight":"12 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"111",
         "weight":"8 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"125",
         "weight":"10 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"126",
         "weight":"10 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"066",
         "weight":"10 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"127",
         "weight":"10 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"128",
         "weight":"10 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"075",
         "weight":"10 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"123",
         "weight":"10 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"076",
         "weight":"10 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"046",
         "weight":"6 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"027",
         "weight":"4 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"050",
         "weight":"4 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"020",
         "weight":"4 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"129",
         "weight":"4 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"051",
         "weight":"4 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"079",
         "weight":"4 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"024",
         "weight":"4 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"130",
         "weight":"4 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"013",
         "weight":"2 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"073",
         "weight":"2 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"004",
         "weight":"2 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"001",
         "weight":"2 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"002",
         "weight":"2 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"003",
         "weight":"2 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"005",
         "weight":"2 กรัม"
     }],
     "suggestion" :["บรรเทาอาการปวดหลังปวดเอว ปวดเมื่อยตามร่างกาย"],
@@ -1121,14 +1121,14 @@
 
 {
     "idDrugFormula": "011",
-    "drugName" : "ยาขี้ผึ้งไพล ยาขี้ผึ้ง (รพ.)",
+    "drugName" : "ยาขี้ผึ้งไพล",
     "recipeType" : "สูตรตำรับ",
     "herb" : [{
-        "idherb":null,
+        "idherb":"131",
         "weight":"30 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"132",
         "weight":"10 กรัม"
     }],
     "suggestion" :["บรรเทาอาการปวดเมื่อย"],
@@ -1139,18 +1139,18 @@
 
 {
     "idDrugFormula": "012",
-    "drugName" : "ยาตรีเกสรมาศ ยาชง (รพ.)",
+    "drugName" : "ยาตรีเกสรมาศ",
     "recipeType" : "สูตรตำรับ",
     "herb" : [{
-        "idherb":null,
+        "idherb":"134",
         "weight":"30 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"005",
         "weight":"30 กรัม"
     },
     {
-        "idherb":null,
+        "idherb":"135",
         "weight":"30 กรัม"
     }],
     "suggestion" :["แก้อ่อนเพลีย ปรับธาตใุนผู้ป่วยที่เพิ่งฟื้นจากการเจ็บป่วย เช่น ไข้ ท้องเสีย"],
@@ -1162,7 +1162,7 @@
 
 {
     "idDrugFormula": "013",
-    "drugName" : "ยาขมิ้นชันยาแคปซูล ยาเม็ด ยาแคปซูล (รพ.) ยาเม็ด (รพ.)",
+    "drugName" : "ยาขมิ้นชันยาแคปซูล",
     "recipeType" : "ยาพัฒนาจากสมุนไพร",
     "herb" : [{
         "idherb":null,
@@ -1176,7 +1176,7 @@
 }
 {
     "idDrugFormula": "014",
-    "drugName" : "ยาชุมเห็ดเทศ ยาแคปซูล ยาชง ยาแคปซูล (รพ.) ยาชง (รพ.)",
+    "drugName" : "ยาชุมเห็ดเทศ",
     "recipeType" : "ยาพัฒนาจากสมุนไพร",
     "herb" : [{
         "idherb":null,
@@ -1197,7 +1197,7 @@
 }
 {
     "idDrugFormula": "015",
-    "drugName" : "ยากล้วย ยาผง (รพ.)",
+    "drugName" : "ยากล้วย",
     "recipeType" : "ยาพัฒนาจากสมุนไพร",
     "herb" : [{
         "idherb":null,
@@ -1210,7 +1210,7 @@
 }
 {
     "idDrugFormula": "016",
-    "drugName" : "ยาฟ้าทะลายโจร ยาแคปซูล ยาเม็ด ยาลูกกลอน ยาแคปซูล (รพ.) ยาลูกกลอน (รพ.)",
+    "drugName" : "ยาฟ้าทะลายโจร",
     "recipeType" : "ยาพัฒนาจากสมุนไพร",
     "recipeType" : "",
     "herb" : [{
@@ -1232,7 +1232,7 @@
 }
 {
     "idDrugFormula": "017",
-    "drugName" : "ยาทิงเจอร์ทองพันชั่ง ยาทิงเจอร์(รพ.)",
+    "drugName" : "ยาทิงเจอร์ทองพันชั่ง",
     "recipeType" : "ทาแก้กลากเกลื่อน โรคผิวหนังที่เกิดจากเชื้อรา น้ำกัดเท้า",
     "herb" : [{
         "idherb":null,
@@ -1244,8 +1244,7 @@
 }
 {
     "idDrugFormula": "018",
-    "drugName" : "ยาเถาวัลย์เปรียง ยาแคปซูล (รพ.)
-    ",
+    "drugName" : "ยาเถาวัลย์เปรียง",
     "recipeType" : "ยาพัฒนาจากสมุนไพร",
     "herb" : [{
         "idherb":null,
@@ -1259,7 +1258,7 @@
 }
 {
     "idDrugFormula": "019",
-    "drugName" : "ยาพริก ยาเจล ยาครมี (รพ.) ยาเจล (รพ.) ยาข้ีผ้ึง (รพ.)",
+    "drugName" : "ยาพริก",
     "recipeType" : "ยาพัฒนาจากสมุนไพร",
     "herb" : [{
         "idherb":null,
@@ -1280,7 +1279,7 @@
 }
 {
     "idDrugFormula": "020",
-    "drugName" : "ยากระเจี๊ยบแดง ยาชง (รพ.)",
+    "drugName" : "ยากระเจี๊ยบแดง",
     "recipeType" : "ยาพัฒนาจากสมุนไพร",
     "herb" : [{
         "idherb":null,
@@ -1293,7 +1292,7 @@
 
 {
     "idDrugFormula": "021",
-    "drugName" : "ยาบัวบก ยาแคปซูล (รพ.) ยาชง(รพ.)",
+    "drugName" : "ยาบัวบก",
     "recipeType" : "ยาพัฒนาจากสมุนไพร",
     "herb" : [{
         "idherb":null,
@@ -1313,7 +1312,7 @@
 }
 {
     "idDrugFormula": "022",
-    "drugName" : "ยารางจืด ยาชง (รพ.)",
+    "drugName" : "ยารางจืด",
     "recipeType" : "ยาพัฒนาจากสมุนไพร",
     "herb" : [{
         "idherb":null,
@@ -1327,7 +1326,7 @@
 
 {
     "idDrugFormula": "023",
-    "drugName" : "ยาหญ้าดอกขาว ยาชง (รพ.)",
+    "drugName" : "ยาหญ้าดอกขาว",
     "recipeType" : "ยาพัฒนาจากสมุนไพร",
     "herb" : [{
         "idherb":null,
