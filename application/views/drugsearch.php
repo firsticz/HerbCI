@@ -16,11 +16,11 @@
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
     <link href="http://cdn.phpoll.com/css/animate.css" rel="stylesheet">
    
-    <title>SymtomGroup Search</title>
+    <title>DrugFormula Search</title>
 </head>
 <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top" id="navlogin">
-       
+        
     </nav>
 
 
@@ -28,7 +28,7 @@
     <div class="container">
 
     <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">SymtomGroup
+    <h1 class="mt-4 mb-3">DrugFormula
     <small>Search</small>
     </h1>
 
@@ -36,24 +36,24 @@
     <li class="breadcrumb-item">
         <a href="index2">Home</a>
     </li>
-    <li class="breadcrumb-item active">SymtomGroup Search</li>
+    <li class="breadcrumb-item active">DrugFormula Search</li>
     </ol>
 
-    <img class="img-fluid rounded mb-4" src="<?php echo base_url() ?>assets/img/brandsymtomgroup.jpg" alt="">
+    <img class="img-fluid rounded mb-4" src="<?php echo base_url() ?>assets/img/brandrug.jpg" alt="">
     <div class="row justify-content-center align-items-center">
         <div class="card col-lg-6 mb-4">
-                <h5 class="card-header">SymtomGroup Search</h5>
+                <h5 class="card-header">DrugFormula Search</h5>
                 <div class="card-body text-center">
-                    <img src="<?php echo base_url() ?>assets/img/symtomgroup.jpg" alt="">
+                    <img src="<?php echo base_url() ?>assets/img/drug.jpg" alt="">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="SymtomGroup name..">
+                        <input type="text" class="form-control" placeholder="DrugFormula name..">
                         <span class="input-group-btn">
                         <button class="btn btn-secondary" type="button">Go!</button>
                         </span>
                     </div>
                 </div>
         </div>
-    <div>
+    </div>
 </div>
 </div>
 </div>

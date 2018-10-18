@@ -15,12 +15,24 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
     <link href="http://cdn.phpoll.com/css/animate.css" rel="stylesheet">
-   
-    <title>Symtom Search</title>
+
+        <script language="javascript">
+            function checkID(id){
+                if(id<100 || id>0) return true;
+                return false;
+            }
+
+            function checkForm(){ 
+                if(!checkID(document.fscore.score.value))
+                    alert('กรอกคะแนนไม่ถูกต้อง');
+                }
+        </script>
+            
+    <title>Herb Search</title>
 </head>
 <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top" id="navlogin">
-        
+       
     </nav>
 
 
@@ -28,7 +40,7 @@
     <div class="container">
 
     <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">Symptom
+    <h1 class="mt-4 mb-3">Herb
     <small>Search</small>
     </h1>
 
@@ -36,24 +48,58 @@
     <li class="breadcrumb-item">
         <a href="index2">Home</a>
     </li>
-    <li class="breadcrumb-item active">Symtom Search</li>
+    <li class="breadcrumb-item">
+        <a href="<?php echo base_url()?>main/herbsearch2">Herb Search</a>
+    </li>
+    <li class="breadcrumb-item active">ดอกพิกุล</li>
     </ol>
 
-    <img class="img-fluid rounded mb-4" src="<?php echo base_url() ?>assets/img/brandsymtom.jpg" alt="">
-    <div class="row justify-content-center align-items-center">
-        <div class="card col-lg-6 mb-4">
-                <h5 class="card-header">Symptom Search</h5>
-                <div class="card-body text-center">
-                    <img src="<?php echo base_url() ?>assets/img/symtom.jpg" alt="">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Symtom name..">
-                        <span class="input-group-btn">
-                        <button class="btn btn-secondary" type="button">Go!</button>
-                        </span>
-                    </div>
+    <div class="card mb-4">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-lg-12 ">
+                <!-- ตรงนี้ต้องดึงค่าจาก db -->
+              <h2 class="card-title">ดอกพิกุล</h2>
+              <h3 class="card-title">สรรพคุณ</h3>
+              <p class="card-text">แก้ลมวิงเวียน
+                แก้ลมกองละเอียด ได้แก่ อาการหน้ามืด ตาลาย สวิงสวาย (อาการที่รู้สึกใจหวิววิงเวียนคลื่นไส้ ตาพร่าจะเป็นลม) ใจสั่น และบำรุงดวงจิตให้ชุ่มชื่น
+                <br>แก้ลมปลายไข้
+                <br>แก้ลมวิงเวียน คลื่นเหียน อาเจียน (ลมจุกแน่นในอก) ในผู้สูงอายุ
+                <br>แก้ลมวิงเวียน อ่อนเพลีย นอนไม่หลับ
+                <br>แก้ลมบาดทะจิต
+                <br>แก้คลื่นเหียนอาเจียน
+                <br>แก้ลมจุกเสียด
+                <br>ขับน้ำคาวปลา บำรุงเลือด ช่วยให้มดลูกเข้าอู่เร็วในหญิงหลังคลอด
+                <br>บรรเทาอาการไข้ ร้อนในกระหายน้ำ
+                <br>แก้พิษหัด พิษอีสุกอีใส (บรรเทาอาการไข้จากหัดและอีสุกอีใส)
+                <br>ถอนพิษไข้ตานซางสำหรับเด็ก
+                <br>บำรุงโลหิต
+                <br>บรรเทาอาการปวดหลัง ปวดเอว ปวดเมื่อยตามร่างกาย</p><br>
+            </div>
+          </div>
+        <div class="row">
+            <div class="col-md-12">
+            <form name="fscore">
+                <div class="row">
+                <div class="form-group col-md-3">
+                    <label for="score">ให้คะแนนสูตรยา</label>
+                    <input type="text" class="form-control" name="score" id="score" placeholder="กรอกคะแนน 0-100" required>
+                    <button type="submit" class="btn btn-primary">ลงคะแนน</button>
                 </div>
+                </div>
+            </form>
+                <br>
+                <a href="<?php echo base_url()?>main/herbsearch2" class="btn btn-primary">กลับหน้าค้นหา </a>
+            </div>
         </div>
-    <div>
+        </div>
+
+        <div class="card-footer text-muted">
+         อ้างอิงจากบัญชียาหลักแห่งชาติ
+          
+        </div>
+      </div>
+
 </div>
 </div>
 </div>
@@ -106,5 +152,6 @@
             </div>
         </footer>
         <script src="<?php echo base_url() ?>assets/js/navlogin.js"></script>
+        
 </body>
 </html>
