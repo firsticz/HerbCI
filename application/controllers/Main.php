@@ -89,14 +89,19 @@ class Main extends CI_Controller {
         $this->load->view('herbsearch2');
     }
     
-    public function symtomsearch2()
+    public function drugsearch()
 	{
-        $this->load->view('symtomsearch2');
+        $this->load->view('drugsearch');
     }
     
-    public function symtomgroupsearch2()
+    public function symptomsearch2()
 	{
-        $this->load->view('symtomgroupsearch2');
+        $this->load->view('symptomsearch2');
+    }
+    
+    public function demoresult()
+	{
+        $this->load->view('demoresult');
 	}
 
 

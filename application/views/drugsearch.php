@@ -16,97 +16,48 @@
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
     <link href="http://cdn.phpoll.com/css/animate.css" rel="stylesheet">
    
-    <title>Mhunpri</title>
+    <title>DrugFormula Search</title>
 </head>
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top" id="navlogin"> 
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top" id="navlogin">
+        
     </nav>
-
-
-
-    <header>
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <!-- <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image: url('<?php echo base_url() ?>assets/img/brandner1.jpg')">
-          </div>
-          <!-- Slide Two - Set the background image for this slide in the line below -->
-          <!-- <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Second Slide</h3>
-              <p>This is a description for the second slide.</p>
-            </div>
-          </div> -->
-          <!-- Slide Three - Set the background image for this slide in the line below -->
-          <!-- <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')"> -->
-            <!-- <div class="carousel-caption d-none d-md-block">
-              <h3>Third Slide</h3>
-              <p>This is a description for the third slide.</p>
-            </div> -->
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </header>
 
 
 
     <div class="container">
 
-        <h1 class="my-4"><i class="fas fa-leaf"></i> Mhunpri Services.</h1>
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">DrugFormula
+    <small>Search</small>
+    </h1>
 
-        <!-- Marketing Icons Section -->
-        <div class="row">
-        <div class="col-lg-4 mb-4">
-            <div class="card h-100">
-            <h4 class="card-header">HerbSearch</h4>
-            <div class="card-body text-center">
-                <img src="<?php echo base_url() ?>assets/img/herb.jpg" alt="">
-            </div>
-            <div class="card-footer">
-                <a href="<?php echo base_url()?>main/herbsearch2" class="btn btn-primary">Use Service</a>
-            </div>
-            </div>
+    <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+        <a href="index2">Home</a>
+    </li>
+    <li class="breadcrumb-item active">DrugFormula Search</li>
+    </ol>
+
+    <img class="img-fluid rounded mb-4" src="<?php echo base_url() ?>assets/img/brandrug.jpg" alt="">
+    <div class="row justify-content-center align-items-center">
+        <div class="card col-lg-6 mb-4">
+                <h5 class="card-header">DrugFormula Search</h5>
+                <div class="card-body text-center">
+                    <img src="<?php echo base_url() ?>assets/img/drug.jpg" alt="">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="DrugFormula name..">
+                        <span class="input-group-btn">
+                        <button class="btn btn-secondary" type="button">Go!</button>
+                        </span>
+                    </div>
+                </div>
         </div>
-        <div class="col-lg-4 mb-4">
-            <div class="card h-100">
-            <h4 class="card-header">DrugFormulaSearch</h4>
-            <div class="card-body text-center">
-                <img src="<?php echo base_url() ?>assets/img/drug.jpg" alt="">
-            </div>
-            <div class="card-footer">
-                <a href="<?php echo base_url()?>main/drugsearch" class="btn btn-primary">Use Service</a>
-            </div>
-            </div>
-        </div>
-        <div class="col-lg-4 mb-4">
-            <div class="card h-100">
-            <h4 class="card-header">SymptomSearch</h4>
-            <div class="card-body text-center">
-                <img src="<?php echo base_url() ?>assets/img/symptom.jpg" alt="" >
-            </div>
-            <div class="card-footer">
-                <a href="<?php echo base_url()?>main/symptomsearch2" class="btn btn-primary">Use Service</a>
-            </div>
-            </div>
-        </div>
-        </div>
+    <div>
 </div>
-
-
-        <footer class="py-5 bg-dark text-white">
+</div>
+</div>
+          <footer class="py-5 bg-dark text-white">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">

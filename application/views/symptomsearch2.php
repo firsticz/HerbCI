@@ -20,7 +20,7 @@
 </head>
 <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top" id="navlogin">
-        
+       
     </nav>
 
 
@@ -28,7 +28,7 @@
     <div class="container">
 
     <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">Symtom
+    <h1 class="mt-4 mb-3">Symptom
     <small>Search</small>
     </h1>
 
@@ -36,17 +36,17 @@
     <li class="breadcrumb-item">
         <a href="index2">Home</a>
     </li>
-    <li class="breadcrumb-item active">Symtom Search</li>
+    <li class="breadcrumb-item active">Symptom Search</li>
     </ol>
 
     <img class="img-fluid rounded mb-4" src="<?php echo base_url() ?>assets/img/brandsymtom.jpg" alt="">
     <div class="row justify-content-center align-items-center">
         <div class="card col-lg-6 mb-4">
-                <h5 class="card-header">Symtom Search</h5>
+                <h5 class="card-header">Symptom Search</h5>
                 <div class="card-body text-center">
-                    <img src="<?php echo base_url() ?>assets/img/symtom.jpg" alt="">
+                    <img src="<?php echo base_url() ?>assets/img/symptom.jpg" alt="">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Symtom name..">
+                        <input type="text" class="form-control" placeholder="Symptom name..">
                         <span class="input-group-btn">
                         <button class="btn btn-secondary" type="button">Go!</button>
                         </span>
