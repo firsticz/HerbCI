@@ -126,7 +126,7 @@
                 console.log(data);
                 var listOfherb = data.data;
                 var strHerb = "";
-                    strHerb +=         '<div class="card-body">'
+                    strHerb +=         '<div class="card-body col-md-12">'
                               +  '<div class="row">'
                                  +   '<div class="col-lg-12 ">' 
                                   +  '<h2 class="card-title">'+listOfherb.herbname+'</h2>'
