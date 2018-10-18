@@ -45,15 +45,22 @@
                 <h5 class="card-header">Symptom Search</h5>
                 <div class="card-body text-center">
                     <img src="<?php echo base_url() ?>assets/img/symptom.jpg" alt="">
+                    <form id="search">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Symptom name..">
+                        <input type="text" class="form-control" id="symptomname" placeholder="Symptom name..">
                         <span class="input-group-btn">
-                        <button class="btn btn-secondary" type="button">Go!</button>
+                        <button class="btn btn-secondary" type="submit">Go!</button>
                         </span>
                     </div>
+                    </form>
                 </div>
         </div>
     </div>
+        <div class="card mb-4" id="result">
+
+        </div>
+        <div class="row" id="insertscore">
+        </div>
 </div>
 </div>
 </div>
@@ -106,5 +113,105 @@
             </div>
         </footer>
         <script src="<?php echo base_url() ?>assets/js/navlogin.js"></script>
+        <script>
+        $("#search").submit(function (e) { 
+            e.preventDefault();
+            var formdata = {
+                "symptomName": $("#symptomname").val()
+            }
+            let drug = $("#result");
+            let drug2 = $("#insertscore");
+        $.post("http://localhost:8080/Mhunpris/api/symptoms/symptomsearch",JSON.stringify(formdata),
+            function (data, textStatus, jqXHR) {
+                
+                if(data.message == false){
+                    alert("ไม่พบข้อมูล");
+                }else{
+                    var i;
+                    var listOfdrug = data.data;
+                    console.log(listOfdrug.drugName)
+                    var strDrug = "";
+                    strDrug +=         '<div class="card-body col-md-12">'
+                              +  '<div class="row">'
+                                 +   '<div class="col-lg-12 ">' 
+                                  +  '<h2 class="card-title">'+listOfdrug.drugName+'</h2>'
+                                    +'<h3 class="card-title">recipeType</h3>'
+                                   + '<p class="card-text">'+listOfdrug.recipeType+'</p>'
+                                   +'<h3 class="card-title">herb</h3>'
+                                   for(i=0;i<listOfdrug.herb.length;i++){
+                                       strDrug +='<p class="card-text">'+listOfdrug.herb[i].idherb+'   '+listOfdrug.herb[i].weight+'</p>'
+                                   }
+                                   strDrug +='<h3 class="card-title">suggestion</h3>'
+                                   for(i=0;i<listOfdrug.suggestion.length;i++){
+                                       strDrug +='<p class="card-text">'+listOfdrug.suggestion[i]+'</p>'
+                                   }
+                                   strDrug +='<h3 class="card-title">use</h3>'
+                                   for(i=0;i<listOfdrug.suggestion.length;i++){
+                                       strDrug +='<p class="card-text">'+listOfdrug.use[i]+'</p>'
+                                   }
+                                   strDrug +='<h3 class="card-title">warning</h3>'
+                                   for(i=0;i<listOfdrug.suggestion.length;i++){
+                                       strDrug +='<p class="card-text">'+listOfdrug.warning[i]+'</p>'
+                                   }
+                                    
+                                +    '</div>'
+                                +'</div>'
+                                +'</div>'
+                                +'<div class="card-footer text-muted">'
+                                +'อ้างอิงจากบัญชียาหลักแห่งชาติ'
+                                +'</div>'
+                                
+
+                drug.html(strDrug);
+
+                if(usernamelocal != null){
+                   var strDrug2 = "";
+                                    console.log(user);
+                                    strDrug2 += '<div class="col-md-12">'
+                                           + '<form id="inscore">'
+                                               + '<div class="row">'
+                                               + '<div class="form-group col-md-3">'
+                                                   + '<label for="score">ให้คะแนนสูตรยา</label>'
+                                                   + '<input type="hidden" class="form-control" id="drugname" value="'+listOfdrug.drugName+'">'
+                                                   + '<input type="hidden" class="form-control" name="usersocre" id="usersocre1" value="'+user+'">'
+                                                   + '<input type="text" class="form-control" name="usersocre" id="usersocre2" placeholder="กรอกคะแนน 0-100" required>'
+                                                   + '<button class="btn btn-primary" type="submit">ลงคะแนน</button>'
+                                                +'</div>'
+                                               + '</div>'
+                                           + '</form>' 
+                                       + '</div>'
+                                drug2.html(strDrug2);
+                                }
+                }
+                
+
+                
+
+
+
+            }
+        );
+            
+        });
+    </script>
+    <script>
+        $(function(){
+            $("#inscore").submit(function (e) { 
+                e.preventDefault();
+                var formdata = {
+                    "drugformulaId":$("#drugname").val(),
+                    "userscore":[
+                        $("#usersocre1").val(),
+                        $("#usersocre2").val()
+                    ]
+                };
+                $.post("http://localhost:8080/Mhunpris/api/usersocre/inputscore", JSON.stringify(formdata),
+                    function (data, textStatus, jqXHR) {
+                        alert(data.message);
+                    }
+                );
+            });
+        });
+    </script>
 </body>
 </html>

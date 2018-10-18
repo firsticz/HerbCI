@@ -160,7 +160,9 @@
                 }
                 else{
                     var username = data.data[0].username;
+                    var iduser = data.data[0]._id;
                     localStorage.setItem("usernamelocal", username);
+                    localStorage.setItem("user", iduser);
                     alert("เข้าสู่ระบบสำเร็จ");
                     window.location.href = "<?php echo base_url() ?>main/index2";
                     

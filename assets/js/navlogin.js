@@ -1,6 +1,6 @@
 
         var usernamelocal = localStorage.getItem("usernamelocal");
-        var iduser =localStorage.getItem("iduser");
+        var user =localStorage.getItem("user");
         let navlogin = $("#navlogin");
         var strnav = '';
         if(usernamelocal == null){
@@ -40,7 +40,7 @@
 
     function navlogout(){
         localStorage.removeItem("usernamelocal");
-        localStorage.removeItem("iduser");
+        localStorage.removeItem("user");
         alert("ออกจากระบบสำเร็จ")
         window.location.href = "index2";
     }
