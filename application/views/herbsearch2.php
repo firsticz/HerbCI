@@ -55,7 +55,7 @@
                     </form>
                 </div>
         </div>
-    <div>
+    </div>
 
         <div class="card mb-4" id="result">
 
