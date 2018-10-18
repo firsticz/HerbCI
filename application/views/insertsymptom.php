@@ -16,47 +16,35 @@
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
     <link href="http://cdn.phpoll.com/css/animate.css" rel="stylesheet">
    
-    <title>Herb Insert</title>
+    <title>Symptom Insert</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-            var str = "";
-            $("#buttonproperties").click(function(){
-                str = '<input type="text" class="properties form-control" id="properties" placeholder="กรอกสรรพคุณ..">';
-
-                    $("#temp").append(str);
-            });
             
             var str1 = "";
             $("#buttonwarning").click(function(){
-                str1 = '<input type="text" class="warning form-control" id="warning" placeholder="กรอกคำเตือน..">';
+                str1 = '<input type="text" class="idDrugFormula form-control" id="idDrugFormula" placeholder="กรอกสูตรยา..">';
 
-                    $("#temp1").append(str1);
+                    $("#temp").append(str1);
             });
             
             $("#submit").click(function(){
                 var obj = {
-                    "herbName" : $("#herbName").val(),
-                    "properties" : null,
-                    "warning" : null
+                    "idSymtomGroup" : $("#idSymtomGroup").val(),
+                    "SymtomName" : $("#SymtomName").val(),
+                    "idDrugFormula" : null
                 };
 
-                var arr = [];
-                $( ".properties" ).each(function( index ) {
-                    arr[index] = $( this ).val();
-                });
-                obj.properties = arr;
-
                 var arr1 = [];
-                $( ".warning" ).each(function( index ) {
+                $( ".idDrugFormula" ).each(function( index ) {
                     arr1[index] = $( this ).val();
                 });
-                obj.warning = arr1;
+                obj.idDrugFormula = arr1;
 
                 console.log(obj);
                 
-                $.post("http://localhost:8080/Mhunpris/api/herb/insert", JSON.stringify(obj),//ติด
+                $.post("http://localhost:8080/Mhunpris/api/systoms/insert", JSON.stringify(obj),//ติด
                     function (data, textStatus, jqXHR) {
                         alert(data.message);
                         
@@ -79,7 +67,7 @@
     <div class="container">
 
     <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">Herb
+    <h1 class="mt-4 mb-3">Symptom
     <small>Insert</small>
     </h1>
 
@@ -87,7 +75,7 @@
     <li class="breadcrumb-item">
         <a href="index2">Home</a>
     </li>
-    <li class="breadcrumb-item active">Herb Insert</li>
+    <li class="breadcrumb-item active">Symptom Insert</li>
     </ol>
 
     <div class="card mb-4">
@@ -97,24 +85,22 @@
                 <form>
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <label for="herbName">ชื่อสมุนไพร</label>
-                            <input type="text" class="form-control" id="herbName" placeholder="กรอกชื่อสมุนไพร..">
+                            <label for="idSymtomGroup">กลุ่มอาการ</label>
+                            <input type="text" class="form-control" id="idSymtomGroup" placeholder="กรอกกลุ่มอาการ..">
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <label for="properties">สรรพคุณ</label>
-                            <input type="text" class="properties form-control" id="properties" placeholder="กรอกสรรพคุณ..">
+                            <label for="SymtomName">ชื่ออาการ</label>
+                            <input type="text" class="form-control" id="SymtomName" placeholder="กรอกชื่ออาการ..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="warning">สูตรยา</label>
+                            <input type="text" class="idDrugFormula form-control" id="idDrugFormula" placeholder="กรอกสูตรยา..">
                             <span id="temp"></span>
-                            <button type="button" id="buttonproperties" class="btn btn-secondary btn-sm">เพิ่มสรรพคุณ</button>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-md-6">
-                            <label for="warning">คำเตือน</label>
-                            <input type="text" class="warning form-control" id="warning" placeholder="กรอกคำเตือน..">
-                            <span id="temp1"></span>
-                            <button type="button" id="buttonwarning" class="btn btn-secondary btn-sm">เพิ่มคำเตือน</button>
+                            <button type="button" id="buttonwarning" class="btn btn-secondary btn-sm">เพิ่มสูตรยา</button>
                         </div>
                     </div>
                     <button type="button" id="submit" class="btn btn-primary">บันทึก</button>
