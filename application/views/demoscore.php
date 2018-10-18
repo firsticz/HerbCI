@@ -15,7 +15,19 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
     <link href="http://cdn.phpoll.com/css/animate.css" rel="stylesheet">
-   
+
+        <script language="javascript">
+            function checkID(id){
+                if(id<100 || id>0) return true;
+                return false;
+            }
+
+            function checkForm(){ 
+                if(!checkID(document.fscore.score.value))
+                    alert('กรอกคะแนนไม่ถูกต้อง');
+                }
+        </script>
+            
     <title>Herb Search</title>
 </head>
 <body>
@@ -67,11 +79,11 @@
           </div>
         <div class="row">
             <div class="col-md-12">
-            <form id="fscore">
+            <form name="fscore">
                 <div class="row">
                 <div class="form-group col-md-3">
                     <label for="score">ให้คะแนนสูตรยา</label>
-                    <input type="text" class="form-control" id="score" placeholder="กรอกคะแนน 0-100">
+                    <input type="text" class="form-control" name="score" id="score" placeholder="กรอกคะแนน 0-100" required>
                     <button type="submit" class="btn btn-primary">ลงคะแนน</button>
                 </div>
                 </div>
@@ -140,19 +152,6 @@
             </div>
         </footer>
         <script src="<?php echo base_url() ?>assets/js/navlogin.js"></script>
-        <script>
-            $("#formscore").validate({
-            rules: {
-                score: {
-                    required: true
-                } 
-            },
-            messages: {
-                score: {
-                    required: "กรุณากรอกคะแนน"
-                }
-            }
-            });
-        </script>
+        
 </body>
 </html>
