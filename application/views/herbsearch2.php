@@ -135,8 +135,6 @@
                                   +  '<h2 class="card-title">'+listOfherb.herbname+'</h2>'
                                     +'<h3 class="card-title">สรรพคุณ</h3>'
                                    + '<p class="card-text">'+listOfherb.properties+'</p>'
-                               + '<h3 class="card-title">คำเตือน</h3>'
-                               + '<p class="card-text"> '+listOfherb.warning+' </p>'
                                 +    '</div>'
                                 +'</div>'
                                 +'</div>'
