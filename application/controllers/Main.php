@@ -102,6 +102,11 @@ class Main extends CI_Controller {
     public function demoresult()
 	{
         $this->load->view('demoresult');
+    }
+    
+    public function demoscore()
+	{
+        $this->load->view('demoscore');
 	}
 
 

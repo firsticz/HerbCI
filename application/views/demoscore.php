@@ -36,26 +36,11 @@
     <li class="breadcrumb-item">
         <a href="index2">Home</a>
     </li>
-    <li class="breadcrumb-item active">Herb Search</li>
+    <li class="breadcrumb-item">
+        <a href="<?php echo base_url()?>main/herbsearch2">Herb Search</a>
+    </li>
+    <li class="breadcrumb-item active">ดอกพิกุล</li>
     </ol>
-
-    <img class="img-fluid rounded mb-4" src="<?php echo base_url() ?>assets/img/brandherb.jpg" alt="">
-    <div class="row justify-content-center align-items-center">
-        <div class="card col-lg-6 mb-4">
-                <h5 class="card-header">Herb Search</h5>
-                <div class="card-body text-center">
-                    <img src="<?php echo base_url() ?>assets/img/herb.jpg" alt="">
-                    <form id="search">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Herb name..">
-                        <span class="input-group-btn">
-                        <button class="btn btn-secondary" type="button">Go!</button>
-                        </span>
-                    </div>
-                    </form>
-                </div>
-        </div>
-    <div>
 
     <div class="card mb-4">
         <div class="card-body">
@@ -65,31 +50,44 @@
               <h2 class="card-title">ดอกพิกุล</h2>
               <h3 class="card-title">สรรพคุณ</h3>
               <p class="card-text">แก้ลมวิงเวียน
-        แก้ลมกองละเอียด ได้แก่ อาการหน้ามืด ตาลาย สวิงสวาย (อาการที่รู้สึกใจหวิววิงเวียนคลื่นไส้ ตาพร่าจะเป็นลม) ใจสั่น และบำรุงดวงจิตให้ชุ่มชื่น
-        <br>แก้ลมปลายไข้
-        <br>แก้ลมวิงเวียน คลื่นเหียน อาเจียน (ลมจุกแน่นในอก) ในผู้สูงอายุ
-        <br>แก้ลมวิงเวียน อ่อนเพลีย นอนไม่หลับ
-        <br>แก้ลมบาดทะจิต
-        <br>แก้คลื่นเหียนอาเจียน
-        <br>แก้ลมจุกเสียด
-        <br>ขับน้ำคาวปลา บำรุงเลือด ช่วยให้มดลูกเข้าอู่เร็วในหญิงหลังคลอด
-        <br>บรรเทาอาการไข้ ร้อนในกระหายน้ำ
-        <br>แก้พิษหัด พิษอีสุกอีใส (บรรเทาอาการไข้จากหัดและอีสุกอีใส)
-        <br>ถอนพิษไข้ตานซางสำหรับเด็ก
-        <br>บำรุงโลหิต
-        <br>บรรเทาอาการปวดหลัง ปวดเอว ปวดเมื่อยตามร่างกาย</p>
-        <h3 class="card-title">คำเตือน</h3>
-        <p class="card-text"> - </p>
-              <a href="<?php echo base_url()?>main/herbsearch2" class="btn btn-primary">กลับหน้าค้นหา </a>
+                แก้ลมกองละเอียด ได้แก่ อาการหน้ามืด ตาลาย สวิงสวาย (อาการที่รู้สึกใจหวิววิงเวียนคลื่นไส้ ตาพร่าจะเป็นลม) ใจสั่น และบำรุงดวงจิตให้ชุ่มชื่น
+                <br>แก้ลมปลายไข้
+                <br>แก้ลมวิงเวียน คลื่นเหียน อาเจียน (ลมจุกแน่นในอก) ในผู้สูงอายุ
+                <br>แก้ลมวิงเวียน อ่อนเพลีย นอนไม่หลับ
+                <br>แก้ลมบาดทะจิต
+                <br>แก้คลื่นเหียนอาเจียน
+                <br>แก้ลมจุกเสียด
+                <br>ขับน้ำคาวปลา บำรุงเลือด ช่วยให้มดลูกเข้าอู่เร็วในหญิงหลังคลอด
+                <br>บรรเทาอาการไข้ ร้อนในกระหายน้ำ
+                <br>แก้พิษหัด พิษอีสุกอีใส (บรรเทาอาการไข้จากหัดและอีสุกอีใส)
+                <br>ถอนพิษไข้ตานซางสำหรับเด็ก
+                <br>บำรุงโลหิต
+                <br>บรรเทาอาการปวดหลัง ปวดเอว ปวดเมื่อยตามร่างกาย</p><br>
             </div>
           </div>
+        <div class="row">
+            <div class="col-md-12">
+            <form id="fscore">
+                <div class="row">
+                <div class="form-group col-md-3">
+                    <label for="score">ให้คะแนนสูตรยา</label>
+                    <input type="text" class="form-control" id="score" placeholder="กรอกคะแนน 0-100">
+                    <button type="submit" class="btn btn-primary">ลงคะแนน</button>
+                </div>
+                </div>
+            </form>
+                <br>
+                <a href="<?php echo base_url()?>main/herbsearch2" class="btn btn-primary">กลับหน้าค้นหา </a>
+            </div>
         </div>
+        </div>
+
         <div class="card-footer text-muted">
          อ้างอิงจากบัญชียาหลักแห่งชาติ
           
         </div>
       </div>
-      
+
 </div>
 </div>
 </div>
@@ -142,5 +140,19 @@
             </div>
         </footer>
         <script src="<?php echo base_url() ?>assets/js/navlogin.js"></script>
+        <script>
+            $("#formscore").validate({
+            rules: {
+                score: {
+                    required: true
+                } 
+            },
+            messages: {
+                score: {
+                    required: "กรุณากรอกคะแนน"
+                }
+            }
+            });
+        </script>
 </body>
 </html>

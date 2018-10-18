@@ -19,29 +19,29 @@
 $(document).ready(function(){
     var str = "";
     str = 
-            '<p class="herb"><label>Herb Name</label><textarea type="text" class="form-control herb" rows="1" cols="50">'
+            '<p class="herb"><label>Herb Name</label><textarea type="text" class="form-control herbname" rows="1" cols="50">'
 			+'</textarea><label>Weight</label><textarea class="form-control weight" rows="1" cols="50">'
 			+'</textarea></p>'; 
 
             $("#temp1").append(str);
     
-    str = '<p class="suggestion"><label>Suggestion</label><textarea type="text" class="form-control suggestion" rows="4" cols="50">'
+    str = '<p class="suggestion"><label>Suggestion</label><textarea type="text" class="form-control suggestion1" rows="4" cols="50">'
 			+'</textarea></p>';
 
 			$("#temp3").append(str);
             
-    str = '<p class="use"><label>Use</label><textarea type="text" class="form-control use" rows="4" cols="50">'
+    str = '<p class="use"><label>Use</label><textarea type="text" class="form-control use1" rows="4" cols="50">'
 			+'</textarea></p>';
 
             $("#temp2").append(str);
 
-    str = '<p class="warning"><label>Warning</label><textarea type="text" class="form-control warning" rows="4" cols="50">'
+    str = '<p class="warning"><label>Warning</label><textarea type="text" class="form-control warning1" rows="4" cols="50">'
 			+'</textarea></p>';
 
 			$("#temp3").append(str);
     $("#create").click(function(){
           str = 
-            '<p class="herb"><label>Herb Name*</label><textarea type="text" class="form-control herb" rows="1" cols="50">'
+            '<p class="herb"><label>Herb Name*</label><textarea type="text" class="form-control herbname" rows="1" cols="50">'
 			+'</textarea><label>Weight*</label><textarea class="form-control weight" rows="1" cols="50">'
 			+'</textarea></p>';
 
@@ -53,7 +53,7 @@ $(document).ready(function(){
     });
 
     $("#createSuggestion").click(function(){
-        str = '<p class="suggestion"><label>Suggestion</label><textarea type="text" class="form-control suggestion" rows="4" cols="50">'
+        str = '<p class="suggestion"><label>Suggestion</label><textarea type="text" class="form-control suggestion1" rows="4" cols="50">'
 			+'</textarea></p>';
 
 			$("#temp3").append(str);
@@ -63,7 +63,7 @@ $(document).ready(function(){
     });
 
     $("#createUse").click(function(){
-        str = '<p class="use"><label>Use*</label><textarea type="text" class="form-control use" rows="4" cols="50">'
+        str = '<p class="use"><label>Use*</label><textarea type="text" class="form-control use1" rows="4" cols="50">'
 			+'</textarea></p>';
 
 			$("#temp2").append(str);
@@ -73,7 +73,7 @@ $(document).ready(function(){
     });
 
     $("#createWarning").click(function(){
-        str = '<p class="warning"><label>Warning*</label><textarea type="text" class="form-control warning" rows="4" cols="50">'
+        str = '<p class="warning"><label>Warning*</label><textarea type="text" class="form-control warning1" rows="4" cols="50">'
 			+'</textarea></p>'; 
 
 			$("#temp3").append(str);
@@ -95,7 +95,7 @@ $(document).ready(function(){
     	var arr = [];
         $( ".herb" ).each(function( index ) {
         	//arr[index] = $( this ).val();
-            var herb = $( this ).children(".herb").val();
+            var herb = $( this ).children(".herbname").val();
             var weight = $( this ).children(".weight").val();
             arr.push({
             	"herb": herb,
@@ -105,19 +105,19 @@ $(document).ready(function(){
         obj.herb = arr;
 
         var arr = [];
-        $( ".suggestion" ).each(function( index ) {
+        $( ".suggestion1" ).each(function( index ) {
         	arr[index] = $( this ).val();
         });
         obj.suggestion = arr;
 
         var arr = [];
-        $( ".use" ).each(function( index ) {
+        $( ".use1" ).each(function( index ) {
         	arr[index] = $( this )  .val();
         });
         obj.use = arr;
 
         var arr = [];
-        $( ".warning" ).each(function( index ) {
+        $( ".warning1" ).each(function( index ) {
         	arr[index] = $( this ).val();
         });
         obj.warning = arr;
