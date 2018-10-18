@@ -15,20 +15,16 @@ class Main extends CI_Controller {
         $this->load->view('index2');
 	}
 
-	public function insertgroup()
+	public function insertsymptomgroup()
 	{
-		$this->load->view('header1');
-        $this->load->view('insertgroup');
+        $this->load->view('insertsymptomgroup');
     }
-    public function insertherb()
-	{
-		$this->load->view('header1');
+    public function insertherb(){
         $this->load->view('insertherb');
     }
-    public function insertsypmtom()
+    public function insertsymptom()
 	{
-		$this->load->view('header1');
-        $this->load->view('insertsypmtom');
+        $this->load->view('insertsymptom');
     }
     public function insertdrug()
 	{

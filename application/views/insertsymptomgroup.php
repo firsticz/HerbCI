@@ -15,20 +15,31 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
     <link href="http://cdn.phpoll.com/css/animate.css" rel="stylesheet">
+   
+    <title>SymptomGroup Insert</title>
 
-        <script language="javascript">
-            function checkID(id){
-                if(id<100 || id>0) return true;
-                return false;
-            }
-
-            function checkForm(){ 
-                if(!checkID(document.fscore.score.value))
-                    alert('กรอกคะแนนไม่ถูกต้อง');
-                }
-        </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
             
-    <title>Herb Search</title>
+            $("#submit").click(function(){
+                var obj = {
+                    "SymtomGroupName" : $("#SymtomGroupName").val()
+                };
+
+            
+                $.post("http://localhost:8080/Mhunpris/api/symtomgroup/insert", JSON.stringify(obj),//ติด
+                    function (data, textStatus, jqXHR) {
+                        alert(data.message);
+                        
+                    }
+                );
+                
+                })
+
+            });
+    </script>
+    
 </head>
 <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top" id="navlogin">
@@ -40,64 +51,38 @@
     <div class="container">
 
     <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">Herb
-    <small>Search</small>
+    <h1 class="mt-4 mb-3">SymptomGroup
+    <small>Insert</small>
     </h1>
 
     <ol class="breadcrumb">
     <li class="breadcrumb-item">
         <a href="index2">Home</a>
     </li>
-    <li class="breadcrumb-item">
-        <a href="<?php echo base_url()?>main/herbsearch2">Herb Search</a>
-    </li>
-    <li class="breadcrumb-item active">ดอกพิกุล</li>
+    <li class="breadcrumb-item active">SymptomGroup Insert</li>
     </ol>
 
     <div class="card mb-4">
         <div class="card-body">
           <div class="row">
             <div class="col-lg-12 ">
-                <!-- ตรงนี้ต้องดึงค่าจาก db -->
-              <h2 class="card-title">ดอกพิกุล</h2>
-              <h3 class="card-title">สรรพคุณ</h3>
-              <p class="card-text">แก้ลมวิงเวียน
-                แก้ลมกองละเอียด ได้แก่ อาการหน้ามืด ตาลาย สวิงสวาย (อาการที่รู้สึกใจหวิววิงเวียนคลื่นไส้ ตาพร่าจะเป็นลม) ใจสั่น และบำรุงดวงจิตให้ชุ่มชื่น
-                <br>แก้ลมปลายไข้
-                <br>แก้ลมวิงเวียน คลื่นเหียน อาเจียน (ลมจุกแน่นในอก) ในผู้สูงอายุ
-                <br>แก้ลมวิงเวียน อ่อนเพลีย นอนไม่หลับ
-                <br>แก้ลมบาดทะจิต
-                <br>แก้คลื่นเหียนอาเจียน
-                <br>แก้ลมจุกเสียด
-                <br>ขับน้ำคาวปลา บำรุงเลือด ช่วยให้มดลูกเข้าอู่เร็วในหญิงหลังคลอด
-                <br>บรรเทาอาการไข้ ร้อนในกระหายน้ำ
-                <br>แก้พิษหัด พิษอีสุกอีใส (บรรเทาอาการไข้จากหัดและอีสุกอีใส)
-                <br>ถอนพิษไข้ตานซางสำหรับเด็ก
-                <br>บำรุงโลหิต
-                <br>บรรเทาอาการปวดหลัง ปวดเอว ปวดเมื่อยตามร่างกาย</p><br>
+                <form>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="SymtomGroupName">ชื่อกลุ่มอาการ</label>
+                            <input type="text" class="form-control" id="SymtomGroupName" placeholder="กรอกชื่อกลุ่มอาการ..">
+                        </div>
+                    </div>
+                
+                    <button type="button" id="submit" class="btn btn-primary">บันทึก</button>
+                </form>
             </div>
           </div>
-        <div class="row">
-            <div class="col-md-12">
-            <form name="fscore">
-                <div class="row">
-                <div class="form-group col-md-3">
-                    <label for="score">ให้คะแนนสูตรยา</label>
-                    <input type="text" class="form-control" name="score" id="score" placeholder="กรอกคะแนน 0-100" required>
-                    <button type="submit" class="btn btn-primary">ลงคะแนน</button>
-                </div>
-                </div>
-            </form>
-                <br>
-                <a href="<?php echo base_url()?>main/herbsearch2" class="btn btn-primary">กลับหน้าค้นหา </a>
-            </div>
         </div>
-        </div>
-
-        <div class="card-footer text-muted">
+        <!-- <div class="card-footer text-muted">
          อ้างอิงจากบัญชียาหลักแห่งชาติ
           
-        </div>
+        </div> -->
       </div>
 
 </div>
@@ -152,6 +137,5 @@
             </div>
         </footer>
         <script src="<?php echo base_url() ?>assets/js/navlogin.js"></script>
-        
 </body>
 </html>
