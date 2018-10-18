@@ -47,7 +47,7 @@
                     <img src="<?php echo base_url() ?>assets/img/herb.jpg" alt="">
                     <form id="search">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Herb name.." id="herb">
+                        <input type="text" class="form-control" placeholder="Herb name.." id="herb" required>
                         <span class="input-group-btn">
                         <button class="btn btn-secondary" type="submit">Go!</button>
                         </span>
@@ -123,9 +123,12 @@
             let herbs = $("#result");
         $.post("http://localhost:8080/Mhunpris/api/herb/searchproperties",JSON.stringify(formdata),
             function (data, textStatus, jqXHR) {
-                console.log(data);
-                var listOfherb = data.data;
-                var strHerb = "";
+                
+                if(data.message == false){
+                    alert("ไม่พบข้อมูล");
+                }else{
+                    var listOfherb = data.data;
+                    var strHerb = "";
                     strHerb +=         '<div class="card-body col-md-12">'
                               +  '<div class="row">'
                                  +   '<div class="col-lg-12 ">' 
@@ -142,6 +145,8 @@
                                 +'</div>'
 
                 herbs.html(strHerb);  
+                }
+                
             }
         );
             
