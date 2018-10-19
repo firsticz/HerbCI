@@ -80,24 +80,24 @@
                                 </div>
                                     
                                 
-                                  
+                                 <form id="register"> 
                                 <div class="form-group">
                                     <label for="email" class="col-md-3 control-label">Email</label>
                                     <div class="col-md-9">
-                                        <input type="text" class="form-control" name="email" placeholder="Email Address">
+                                        <input type="text" class="form-control" name="email" id="email" placeholder="Email Address">
                                     </div>
                                 </div>
                                     
                                 <div class="form-group">
                                     <label for="firstname" class="col-md-3 control-label">First Name</label>
                                     <div class="col-md-9">
-                                        <input type="text" class="form-control" name="firstname" placeholder="First Name">
+                                        <input type="text" class="form-control" name="firstname" id="firstname" placeholder="First Name">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="lastname" class="col-md-3 control-label">Last Name</label>
                                     <div class="col-md-9">
-                                        <input type="text" class="form-control" name="lastname" placeholder="Last Name">
+                                        <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Last Name">
                                     </div>
                                 </div>
 
@@ -118,10 +118,11 @@
                                 <div class="form-group">
                                     <!-- Button -->                                        
                                     <div class="col-md-offset-3 col-md-9">
-                                        <button id="btn-signup" type="button" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp Sign Up</button>
+                                        <button id="btn-signup" type="submit" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp Sign Up</button>
                                         <span style="margin-left:8px;">or</span>  
                                     </div>
                                 </div>
+                                </form>
                                 
                                 <div style="border-top: 1px solid #999; padding-top:20px"  class="form-group">
                                     
@@ -168,6 +169,23 @@
                     
                     
                 }  
+            }
+        );
+        });
+
+        $("#register").submit(function (e) { 
+            e.preventDefault();
+            var formdata = {
+                "email": $("#email").val(),
+                "firstname": $("#firstname").val(),
+                "lastname": $("#lastname").val(),
+                "username": $("#username2").val(),
+                "password": $("#password2").val(),
+                
+            }
+            $.post("http://localhost:8080/Mhunpris/api/member/register", JSON.stringify(formdata),
+            function (data, textStatus, jqXHR) {
+                alert(data.message);
             }
         );
         });
