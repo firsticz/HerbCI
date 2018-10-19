@@ -129,29 +129,30 @@
                 }else{
                     var i;
                     var listOfdrug = data.data;
-                    console.log(listOfdrug.drugName)
+                    console.log(data.data[0])
                     var strDrug = "";
+                    $.each(listOfdrug, function( index, value ) {
                     strDrug +=         '<div class="card-body col-md-12">'
                               +  '<div class="row">'
                                  +   '<div class="col-lg-12 ">' 
-                                  +  '<h2 class="card-title">'+listOfdrug.drugName+'</h2>'
+                                  +  '<h2 class="card-title">'+value.drugName+'</h2>'
                                     +'<h3 class="card-title">recipeType</h3>'
-                                   + '<p class="card-text">'+listOfdrug.recipeType+'</p>'
+                                   + '<p class="card-text">'+value.recipeType+'</p>'
                                    +'<h3 class="card-title">herb</h3>'
-                                   for(i=0;i<listOfdrug.herb.length;i++){
-                                       strDrug +='<p class="card-text">'+listOfdrug.herb[i].idherb+'   '+listOfdrug.herb[i].weight+'</p>'
+                                   for(i=0;i<value.herb.length;i++){
+                                       strDrug +='<p class="card-text">'+value.herb[i].idherb+'   '+value.herb[i].weight+'</p>'
                                    }
                                    strDrug +='<h3 class="card-title">suggestion</h3>'
-                                   for(i=0;i<listOfdrug.suggestion.length;i++){
-                                       strDrug +='<p class="card-text">'+listOfdrug.suggestion[i]+'</p>'
+                                   for(i=0;i<value.suggestion.length;i++){
+                                       strDrug +='<p class="card-text">'+value.suggestion[i]+'</p>'
                                    }
                                    strDrug +='<h3 class="card-title">use</h3>'
-                                   for(i=0;i<listOfdrug.suggestion.length;i++){
-                                       strDrug +='<p class="card-text">'+listOfdrug.use[i]+'</p>'
+                                   for(i=0;i<value.suggestion.length;i++){
+                                       strDrug +='<p class="card-text">'+value.use[i]+'</p>'
                                    }
                                    strDrug +='<h3 class="card-title">warning</h3>'
-                                   for(i=0;i<listOfdrug.suggestion.length;i++){
-                                       strDrug +='<p class="card-text">'+listOfdrug.warning[i]+'</p>'
+                                   for(i=0;i<value.suggestion.length;i++){
+                                       strDrug +='<p class="card-text">'+value.warning[i]+'</p>'
                                    }
                                     
                                 +    '</div>'
@@ -160,8 +161,8 @@
                                 +'<div class="card-footer text-muted">'
                                 +'อ้างอิงจากบัญชียาหลักแห่งชาติ'
                                 +'</div>'
-                                
 
+                    });
                 drug.html(strDrug);
 
                 if(usernamelocal != null){
