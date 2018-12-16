@@ -15,7 +15,25 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
     <link href="http://cdn.phpoll.com/css/animate.css" rel="stylesheet">
-   
+    <style>
+        .newspaper {
+            -webkit-column-count: 4; /* Chrome, Safari, Opera */
+            -moz-column-count: 4; /* Firefox */
+            column-count: 4;
+            -webkit-column-gap: 50px; /* Chrome, Safari, Opera */
+            -moz-column-gap: 50px; /* Firefox */
+            column-gap: 50px;
+            -webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+            -moz-column-rule-style: solid; /* Firefox */
+            column-rule-style: solid;
+            -webkit-column-rule-width: 1px; /* Chrome, Safari, Opera */
+            -moz-column-rule-width: 1px; /* Firefox */
+            column-rule-width: 1px;
+            -webkit-column-rule-color: lightblue; /* Chrome, Safari, Opera */
+            -moz-column-rule-color: lightblue; /* Firefox */
+            column-rule-color: lightblue;
+        }
+</style>
     <title>Symtom Search</title>
 </head>
 <body>
@@ -32,12 +50,11 @@
     <small>Search</small>
     </h1>
 
-    <ol class="breadcrumb">
-    <li class="breadcrumb-item">
-        <a href="index2">Home</a>
+    <a href="index2" class="list-group-item"><i class="fa fa-home fa-fw"></i> Home</a><!-- <a href="index2">Home</a> -->
     </li>
-    <li class="breadcrumb-item active">Symptom Search</li>
+    <!-- <li class="breadcrumb-item active">DrugFormula Search</li> -->
     </ol>
+
 
     <img class="img-fluid rounded mb-4" src="<?php echo base_url() ?>assets/img/brandsymtom.jpg" alt="">
     <div class="row justify-content-center align-items-center">
@@ -49,7 +66,7 @@
                     <div class="input-group">
                         <input type="text" class="form-control" id="symptomname" placeholder="Symptom name..">
                         <span class="input-group-btn">
-                        <button class="btn btn-secondary" type="submit">Go!</button>
+                        <button class="btn btn-secondary" type="submit">Go! <i class="fa fa-search"></i></button>
                         </span>
                     </div>
                     </form>
@@ -134,7 +151,7 @@
                     $.each(listOfdrug, function( index, value ) {
                     strDrug +=         '<div class="card-body col-md-12">'
                               +  '<div class="row">'
-                                 +   '<div class="col-lg-12 ">' 
+                                 +   '<div class="newspaper">' 
                                   +  '<h2 class="card-title">'+value.drugName+'</h2>'
                                     +'<h3 class="card-title">recipeType</h3>'
                                    + '<p class="card-text">'+value.recipeType+'</p>'

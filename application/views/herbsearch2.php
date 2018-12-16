@@ -32,12 +32,11 @@
     <small>Search</small>
     </h1>
 
-    <ol class="breadcrumb">
-    <li class="breadcrumb-item">
-        <a href="index2">Home</a>
+    <a href="index2" class="list-group-item"><i class="fa fa-home fa-fw"></i> Home</a><!-- <a href="index2">Home</a> -->
     </li>
-    <li class="breadcrumb-item active">Herb Search</li>
+    <!-- <li class="breadcrumb-item active">DrugFormula Search</li> -->
     </ol>
+
 
     <img class="img-fluid rounded mb-4" src="<?php echo base_url() ?>assets/img/brandherb.jpg" alt="">
     <div class="row justify-content-center align-items-center">
@@ -49,7 +48,7 @@
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Herb name.." id="herb" required>
                         <span class="input-group-btn">
-                        <button class="btn btn-secondary" type="submit">Go!</button>
+                        <button class="btn btn-secondary" type="submit">Go! <i class="fa fa-search"></i></button>
                         </span>
                     </div>
                     </form>
@@ -134,7 +133,7 @@
                                  +   '<div class="col-lg-12 ">' 
                                   +  '<h2 class="card-title">'+listOfherb.herbname+'</h2>'
                                     +'<h3 class="card-title">สรรพคุณ</h3>'
-                                   + '<p class="card-text">'+listOfherb.properties+'</p>'
+                                   + '<p class="card-text"><i class="fa fa-quote-left fa-2x fa-pull-left fa-border"></i>'+listOfherb.properties+'</p>'
                                 +    '</div>'
                                 +'</div>'
                                 +'</div>'
