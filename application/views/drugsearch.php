@@ -131,6 +131,8 @@
                 }else{
                     var i;
                     var listOfdrug = data.data;
+                    console.log(data.data);
+                    console.log(data.data2);
                     var strDrug = "";
                     strDrug +=         '<div class="card-body col-md-12">'
                               +  '<div class="row">'
