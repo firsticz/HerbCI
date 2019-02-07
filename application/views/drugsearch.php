@@ -150,9 +150,10 @@
                     alert("ไม่พบข้อมูล");
                 }else{
                     var i;
+                    var j;
                     var listOfdrug = data.data;
                     console.log(data.data);
-                    console.log(data.data2);
+                    console.log(data.data2[0].idherb);
                     var strDrug = "";
                     strDrug +=         '<div class="card-body col-md-12">'
                               +  '<div class="row">'
@@ -162,7 +163,13 @@
                                    + '<p class="card-text">'+listOfdrug.recipeType+'</p>'
                                    +'<h4 class="card-title">สูตรสมุนไพร</h3>'
                                    for(i=0;i<listOfdrug.herb.length;i++){
-                                       strDrug +='<p class="card-text">'+listOfdrug.herb[i].idherb+'   '+listOfdrug.herb[i].weight+'</p>'
+                                       for(j=0;j<data.data2.length;j++){
+                                           if(listOfdrug.herb[i].idherb == data.data2[j].idherb){
+                                            strDrug +='<p class="card-text">'+data.data2[j].herbname+'   '+listOfdrug.herb[i].weight+'</p>'
+                                           }
+                                        
+                                       }
+                                       
                                    }
                                    strDrug +='<h4 class="card-title">รักษา</h3>'
                                    for(i=0;i<listOfdrug.suggestion.length;i++){
