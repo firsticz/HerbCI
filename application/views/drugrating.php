@@ -206,7 +206,8 @@
                                    }
                                    avg = sumscore/count;
                                    avg = avg/20;
-                                   console.log(avg);                                   if(avg == 1){
+                                   console.log(avg);                                   
+                                   if(avg == 1){
                                     strDrug +='<span class="fa fa-star checked"></span>'
                                     +'<span class="fa fa-star "></span>'
                                     +'<span class="fa fa-star "></span>'
