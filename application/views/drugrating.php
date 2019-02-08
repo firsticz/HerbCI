@@ -16,6 +16,8 @@
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
     <link href="http://cdn.phpoll.com/css/animate.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <style>
         .newspaper {
             -webkit-column-count: 4; /* Chrome, Safari, Opera */
@@ -33,6 +35,9 @@
             -webkit-column-rule-color: lightblue; /* Chrome, Safari, Opera */
             -moz-column-rule-color: lightblue; /* Firefox */
             column-rule-color: lightblue;
+        }
+        .checked {
+            color: orange;
         }
 </style>
     <title>DrugFormula Search</title>
