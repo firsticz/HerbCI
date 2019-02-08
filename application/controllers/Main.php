@@ -106,6 +106,11 @@ class Main extends CI_Controller {
     public function showscore()
 	{
         $this->load->view('showscore');
-	}
+    }
+    
+    public function drugrating()
+    {
+        $this->load->view('drugrating');
+    }
 
 }

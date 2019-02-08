@@ -154,11 +154,11 @@
                 if(data.message == false){
                     alert("ไม่พบข้อมูล");
                 }else{
-                    var i;
-                    var j;
+                    var i,j,k,l;
+                    var sumscore,avg,count;
                     var listOfdrug = data.data;
                     console.log(data.data);
-                    console.log(data.data2[0].idherb);
+                    console.log(data.data3[0].userscore.length);
                     var strDrug = "";
                     strDrug +=         '<div class="card-body col-md-12">'
                               +  '<div class="row">'
@@ -190,17 +190,64 @@
                                
                                     }
                                     
-                                   +'</div>'
+                                    strDrug +='</div>'
                                    +'</div>'
                                    +'</div>'
                                    
                                 +'<div class="card-footer text-muted">'
                                 +'<h2>Star Rating</h2>'
-                                +'<span class="fa fa-star checked"></span>'
-                                +'<span class="fa fa-star checked"></span>'
-                                +'<span class="fa fa-star checked"></span>'
-                                +'<span class="fa fa-star"></span>'
-                                +'<span class="fa fa-star"></span>'
+                                for(k=0;k<data.data3.length;k++){
+                                    for(l=0;l<2;l++){
+                                       if(listOfdrug.drugName == data.data3[k].id){
+                                        sumscore = data.data3[0].userscore[0].score;
+                                        count = data.data3[0].userscore.length;
+                                       }
+                                    }
+                                   }
+                                   avg = sumscore/count;
+                                   avg = avg/20;
+                                   console.log(avg);                                   if(avg == 1){
+                                    strDrug +='<span class="fa fa-star checked"></span>'
+                                    +'<span class="fa fa-star "></span>'
+                                    +'<span class="fa fa-star "></span>'
+                                    +'<span class="fa fa-star"></span>'
+                                    +'<span class="fa fa-star"></span>'
+                                   }else if(avg == 2){
+                                    strDrug +='<span class="fa fa-star checked"></span>'
+                                    +'<span class="fa fa-star checked"></span>'
+                                    +'<span class="fa fa-star checked"></span>'
+                                    +'<span class="fa fa-star"></span>'
+                                    +'<span class="fa fa-star"></span>'
+                                   }else if(avg == 3){
+                                    strDrug +='<span class="fa fa-star checked"></span>'
+                                    +'<span class="fa fa-star checked"></span>'
+                                    +'<span class="fa fa-star checked"></span>'
+                                    +'<span class="fa fa-star "></span>'
+                                    +'<span class="fa fa-star"></span>'
+                                   }else if(avg == 4){
+                                    strDrug +='<span class="fa fa-star checked"></span>'
+                                    +'<span class="fa fa-star checked"></span>'
+                                    +'<span class="fa fa-star checked"></span>'
+                                    +'<span class="fa fa-star checked"></span>'
+                                    +'<span class="fa fa-star"></span>'
+                                   }else if(avg == 5){
+                                    strDrug +='<span class="fa fa-star checked"></span>'
+                                    +'<span class="fa fa-star checked"></span>'
+                                    +'<span class="fa fa-star checked"></span>'
+                                    +'<span class="fa fa-star checked"></span>'
+                                    +'<span class="fa fa-star checked"></span>'
+                                   }else{
+                                    strDrug +='<span class="fa fa-star "></span>'
+                                    +'<span class="fa fa-star "></span>'
+                                    +'<span class="fa fa-star "></span>'
+                                    +'<span class="fa fa-star "></span>'
+                                    +'<span class="fa fa-star "></span>'
+                                   }
+
+                                   
+                            
+                                
+                                +'</br>'
                                 +'อ้างอิงจากบัญชียาหลักแห่งชาติ'
                                 +'</div>'
                                   

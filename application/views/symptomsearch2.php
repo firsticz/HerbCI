@@ -134,11 +134,11 @@
         $("#search").submit(function (e) { 
             e.preventDefault();
             var formdata = {
-                "symptomName": $("#symptomname").val()
+                "drugName": $("#drugName").val()
             }
             let drug = $("#result");
             let drug2 = $("#insertscore");
-        $.post("http://localhost:8080/Mhunpris/api/symptoms/symptomsearch",JSON.stringify(formdata),
+        $.post("http://localhost:8080/Mhunpris/api/systoms/findAll",JSON.stringify(formdata),
             function (data, textStatus, jqXHR) {
                 
                 if(data.message == false){
@@ -148,7 +148,7 @@
                     var j;
                     var listOfdrug = data.data;
                     console.log(data.data);
-                    console.log(data.data2[0].idherb);
+                    console.log(data.data3);
                     var strDrug = "";
                     strDrug +=         '<div class="card-body col-md-12">'
                               +  '<div class="row">'
@@ -192,7 +192,7 @@
                                        
                 
                 drug.html(strDrug);
-
+                
                 if(usernamelocal != null){
                    var strDrug2 = "";
                                     console.log(user);
