@@ -145,41 +145,52 @@
                     alert("ไม่พบข้อมูล");
                 }else{
                     var i;
+                    var j;
                     var listOfdrug = data.data;
-                    console.log(data.data[0])
+                    console.log(data.data);
+                    console.log(data.data2[0].idherb);
                     var strDrug = "";
-                    $.each(listOfdrug, function( index, value ) {
                     strDrug +=         '<div class="card-body col-md-12">'
                               +  '<div class="row">'
                                  +   '<div class="newspaper">' 
-                                  +  '<h2 class="card-title">'+value.drugName+'</h2>'
-                                    +'<h3 class="card-title">recipeType</h3>'
-                                   + '<p class="card-text">'+value.recipeType+'</p>'
-                                   +'<h3 class="card-title">herb</h3>'
-                                   for(i=0;i<value.herb.length;i++){
-                                       strDrug +='<p class="card-text">'+value.herb[i].idherb+'   '+value.herb[i].weight+'</p>'
+                                  +  '<h2 class="card-title">'+listOfdrug.drugName+'</h2>'
+                                    +'<h4 class="card-title">ประเภทสูตรยา</h3>'
+                                   + '<p class="card-text">'+listOfdrug.recipeType+'</p>'
+                                   +'<h4 class="card-title">สูตรสมุนไพร</h3>'
+                                   for(i=0;i<listOfdrug.herb.length;i++){
+                                       for(j=0;j<data.data2.length;j++){
+                                           if(listOfdrug.herb[i].idherb == data.data2[j].idherb){
+                                            strDrug +='<p class="card-text">'+data.data2[j].herbname+'   '+listOfdrug.herb[i].weight+'</p>'
+                                           }
+                                        
+                                       }
+                                       
                                    }
-                                   strDrug +='<h3 class="card-title">suggestion</h3>'
-                                   for(i=0;i<value.suggestion.length;i++){
-                                       strDrug +='<p class="card-text">'+value.suggestion[i]+'</p>'
+                                   strDrug +='<h4 class="card-title">รักษา</h3>'
+                                   for(i=0;i<listOfdrug.suggestion.length;i++){
+                                       strDrug +='<p class="card-text">'+listOfdrug.suggestion[i]+'</p>'
                                    }
-                                   strDrug +='<h3 class="card-title">use</h3>'
-                                   for(i=0;i<value.suggestion.length;i++){
-                                       strDrug +='<p class="card-text">'+value.use[i]+'</p>'
+                                   strDrug +='<h4 class="card-title">วิธีใช้</h3>'
+                                   for(i=0;i<listOfdrug.suggestion.length;i++){
+                                       strDrug +='<p class="card-text">'+listOfdrug.use[i]+'</p>'
                                    }
-                                   strDrug +='<h3 class="card-title">warning</h3>'
-                                   for(i=0;i<value.suggestion.length;i++){
-                                       strDrug +='<p class="card-text">'+value.warning[i]+'</p>'
-                                   }
+                                   strDrug +='<h4 class="card-title">คำเตือน</h3>'
+                                   for(i=0;i<listOfdrug.suggestion.length;i++){
+                                       strDrug +='<p class="card-text">'+listOfdrug.warning[i]+'</p>'
+                               
+                                    }
                                     
-                                +    '</div>'
-                                +'</div>'
-                                +'</div>'
+                                   +'</div>'
+                                   +'</div>'
+                                   +'</div>'
+                                   
                                 +'<div class="card-footer text-muted">'
                                 +'อ้างอิงจากบัญชียาหลักแห่งชาติ'
                                 +'</div>'
-
-                    });
+                                  
+                              
+                                       
+                
                 drug.html(strDrug);
 
                 if(usernamelocal != null){

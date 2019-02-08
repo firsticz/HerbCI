@@ -143,7 +143,7 @@
                 
          </div> 
     </div>
-    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    <script src="//code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script src="<?php echo base_url() ?>assets/js/setup.js"></script>
     <script>
@@ -259,8 +259,14 @@ function testAPI() {
 console.log('Welcome! Fetching your information.... ');
 FB.api('/me?fields=name,email', function(response) {
 console.log('Successful login for: ' + response.name);
+alert("เข้าสู่ระบบสำเร็จ");
+document.getElementById("status").innerHTML = '<p>Welcome '+response.name+'! <a href=index2' +'>Continue with facebook login</a></p>'
+// localStorage.setItem("usernamelocal", response.name);
+//                     localStorage.setItem("user", response.name);
+//                     alert("เข้าสู่ระบบสำเร็จ");
+//                     window.location.href = "<?php echo base_url() ?>main/index2";
 
-document.getElementById("status").innerHTML = '<p>Welcome '+response.name+'! <a href=login.php?name='+ response.name.replace(" ", "_") +'&email='+ response.email +'>Continue with facebook login</a></p>'
+console.log(response.name);
 });
 }
 </script>
